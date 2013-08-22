@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lambda Labs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap">
+
+    <!--Import Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link href="assets/less/style.min.css" rel="stylesheet">
+    <link href="assets/less/bootstrap-lightbox.min.css" rel="stylesheet">
+    <link href="colorbox-master/colorbox.css" rel="stylesheet"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    <!-- Le fav  -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='assets/js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <!--Has to be in head, to lazy load images.
+    Minimize in production. -->
+
+    <script src="assets/js/lazyload.js"></script>
+    <script src="assets/js/jRespond.js"></script>
+    <script src="assets/js/spin.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/responsive-nav.js"></script>
+    <script scr="assts/js/masonry.pkgd.js"></script>
+
+    <script src="assets/js/bootstrap-lightbox.min.js"></script>
+    <script src="colorbox-master/jquery.colorbox.js"></script>
+
+
+    <!-- History just for index page -->
+    <script src="assets/js/jquery.history.js"></script>
+    <script>
+        // History, and back button
+        $(function () {
+            jQuery.history.listen()
+            $('#nav .nav .scroll').click(function () {
+                $.history.push('index.html' + $(this).attr('href'));
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".inline").colorbox({inline: true, innerWidth: "700px", fixed: true, speed: 250, fadeOut: 100});
+            $(".inline-dev").colorbox({inline: true, innerWidth: "700px", fixed: true, speed: 250, fadeOut: 100});
+        });
+    </script>
+
+    <!-- Google analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-26433526-3', 'leknarflabs.com');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Main js fail. -->
+    <script src="assets/js/main.js"></script>
+
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Nav button -->
+<a id="toggle" class="closed">
+    <i class="icon-reorder"></i>
+</a>
+
+<!-- Brand and Navigation -->
+<header class="navbar navbar-fixed-top">
+    <div class="inner-page">
+        <h1 class="logo"><a title="Home" href="#home" class="scroll">Lambda Labs</a></h1>
+
+        <div id="nav">
+            <ul class="nav">
+                <li class="active"><a href="#home"></a></li>
+                <li><a title="How it works" href="#how" class="scroll brand-3">How it works</a></li>
+                <li><a title="Benefits" href="#benefits" class="scroll brand-4">Benefits</a></li>
+                <li><a title="Testimonials" href="#testimonials" class="scroll fadeto brand-4">Testimonials</a></li>
+                <li><a title="Who we are" href="#who" class="scroll fadeto brand-3">Who we are</a></li>
+                <li><a title="Get in touch!" href="#contact" class="scroll brand-4">Contact</a></li>
+                <li><a title="Blog" href="http://leknarf.net" class="brand-3" target="_blank">Blog</a></li>
+                <li><a href="#inline_content_dev" class="inline-dev btn">For Developers</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- Home Page -->
+<div id="home" class="page color-1">
+    <div class="inner-page">
+        <h2 class="page-headline">Hire exceptional entrepreneurs.</h2>
+
+        <h3 class="page-subheadline">Lambda is an invite-only marketplace where you can hire startup founders to build
+            your
+            idea.</h3>
+    </div>
+    <div class="span8 pull-right lazy-container">
+        <img class="lazy" width="600" height="400" alt="" src="assets/img/pixel.png"
+             data-original="assets/img/home.svg"/>
+    </div>
+    <div class="inner-page">
+        <ul class="medium-list-two-line">
+            <li><i class="icon-chevron-right"></i>Get exclusive access to entrepreneurs who wouldn't normally be on the
+                market.
+            </li>
+            <li><i class="icon-chevron-right"></i>Every member is an experienced entrepreneur who understands your
+                business needs.
+            </li>
+            <li><i class="icon-chevron-right"></i>Scalable, on-demand, specialized talent -- get your project done right
+                the first time.
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="page color-1 cta-container">
+    <a href="#inline_content"
+       class="inline scroll btn call-to-action">Start your project &rarr;</a>
+    <hr/>
+</div>
+
+<!-- inline colorbox company project form -->
+<div style='display:none'>
+    <div id='inline_content' style='padding:10px; background:#fff;'>
+        <iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true"
+                src="http://form.jotform.us/form/32266336179156" frameborder="0"
+                style="width:100%; height:574px; border:none;" scrolling="no"></iframe>
+        <script type="text/javascript">window.handleIFrameMessage = function (e) {
+            var args = e.data.split(":");
+            var iframe = document.getElementById("JotFormIFrame");
+            if (!iframe)return;
+            switch (args[0]) {
+                case "scrollIntoView":
+                    iframe.scrollIntoView();
+                    break;
+                case "setHeight":
+                    iframe.style.height = args[1] + "px";
+                    break;
+            }
+        };
+        if (window.addEventListener) {
+            window.addEventListener("message", handleIFrameMessage, false);
+        } else if (window.attachEvent) {
+            window.attachEvent("onmessage", handleIFrameMessage);
+        }</script>
+    </div>
+</div>
+
+<!-- inline colorbox developers form -->
+<div style='display:none'>
+    <div id='inline_content_dev' style='padding:10px; background:#fff;'>
+        <iframe id="JotFormIFrame_dev" onload="window.parent.scrollTo(0,0)" allowtransparency="true"
+                src="http://form.jotform.us/form/32266205963152" frameborder="0"
+                style="width:100%; height:674px; border:none;" scrolling="no"></iframe>
+        <script type="text/javascript">window.handleIFrameMessage = function (e) {
+            var args = e.data.split(":");
+            var iframe = document.getElementById("JotFormIFrame_dev");
+            if (!iframe)return;
+            switch (args[0]) {
+                case "scrollIntoView":
+                    iframe.scrollIntoView();
+                    break;
+                case "setHeight":
+                    iframe.style.height = args[1] + "px";
+                    break;
+            }
+        };
+        if (window.addEventListener) {
+            window.addEventListener("message", handleIFrameMessage, false);
+        } else if (window.attachEvent) {
+            window.attachEvent("onmessage", handleIFrameMessage);
+        }</script>
+    </div>
+</div>
+
+<!-- How it works -->
+<div id="how" class="page color-3">
+    <div class="inner-page">
+        <h2 class="page-headline">How it works</h2>
+    </div>
+    <div class="inner-page row-fluid">
+        <ul class="features list-inline">
+            <li>
+                <!--<img src="assets/img/istock-consultants.jpg"/>-->
+                <h3 id="real-people">
+                    <div><i class="icon-comments"></i></div>
+                    We'll talk with you to understand your project
+                </h3>
+
+                <!--<p> Proudly based in NYC, everyone on our team is available by email, phone, and in-person. You can-->
+                <!--interview anyone before adding him to a project and never have to worry about who will actually be-->
+                <!--working for you.-->
+            </li>
+            <li>
+                <!--<img src="assets/img/istock-crowd.jpg"/>-->
+                <h3>
+                    <div><i class="icon-group"></i></div>
+                    We'll interview hundreds of candidates to find the best ones suited to your project.
+                </h3>
+
+                <!--<p>All of our developers are available to work for you full-time, without competing obligations to other-->
+                <!--firms or projects. Unlike freelancers, who often work on side-projects after working a full day for-->
+                <!--their primary employer or who juggle concurrent projects, all of our consultants will work-->
+                <!--exclusively for you. You get the full attention of rested, able employees who are never overbooked-->
+                <!--or spread thin.-->
+            </li>
+            <li>
+                <!--<img src="assets/img/istock-party.jpg"/>-->
+                <h3>
+                    <div><i class="icon-star"></i></div>
+                    You'll meet with the top candidates and select one to join your team.
+                </h3>
+
+                <!--<p>Salaried employees are great when you need to ensure that an individual team member is available 6-->
+                <!--months from now. Most independent freelancers can't guarantee they won't take a full-time job or-->
+                <!--long-term contract when business slows down. Dev shops typically move developers from long-term-->
+                <!--contract to long-term contract, limiting their availability for small additions or maintenance work.-->
+                <!--Our flexible short-term model ensures your team members are available in the future, when you need-->
+                <!--them.-->
+            </li>
+        </ul>
+    </div>
+    <hr/>
+</div>
+
+<!-- Benefits -->
+<div id="benefits" class="page color-1">
+    <div class="inner-page">
+        <h2 class="page-headline">All the benefits of a full-time employee, without the commitment or hassle.</h2>
+    </div>
+
+    <div class="inner-page row-fluid">
+        <ul class="medium-list-two-line">
+            <li><i class="icon-chevron-right"></i>Vetted &amp; Reliable - We're developers ourselves and we
+                interview every single candidate personally.
+            </li>
+            <li><i class="icon-chevron-right"></i>Pay for what you need - Book as few as 10 hours, or as many as
+                40 hours per week.
+            </li>
+            <li><i class="icon-chevron-right"></i>Rapid onboarding - Find and hire excellent people in a fraction of
+                the time. We spend time so you don't have to.
+            </li>
+        </ul>
+    </div>
+
+    <hr/>
+</div>
+<!-- /Benefits -->
+
+<!-- Good -->
+<div id="good" class="page color-3">
+    <div class="inner-page">
+        <h2 class="page-headline">You're in good hands.</h2>
+    </div>
+    <div class="inner-page primary-content centered">
+
+        <div class="pull-right">
+            <img src="assets/img/hand-ok.svg" width="312"/>
+        </div>
+
+        <div class="hands">
+          <div>
+              <div class="pull-left">
+                  <ul class="medium-list-two-line">
+                      <li><i class="icon-dollar"></i>Money-back guarantee.</li>
+                      <li><i class="icon-user"></i>Dedicated account manager so you can focus on what matters.</li>
+                      <li><i class="icon-check"></i>Payments are only released when you approve the work.</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+    <hr/>
+</div>
+<!-- /Good -->
+
+
+<!-- Testimonials -->
+<div id="testimonials" class="page color-4">
+    <div class="inner-page">
+        <h2 class="page-headline">Testimonials</h2>
+    </div>
+    <div class="inner-page row-fluid">
+        <div class="span4">
+            <h3>Paul Conroy, CTO
+                <br/>
+                <a href="https://fullgenomes.com" target="_blank">Full Genomes</a>
+            </h3>
+        </div>
+        <div class="span8">
+            <i class="icon-quote-left icon-3x pull-left"></i>
+
+            <p>I am the CTO of a Biotech Startup - Full Genomes Corporation - and sought Andrew's help in launching
+                our website and for advice on all things technology. Andrew has been a highly efficient worker, who
+                has an impressive knowledge of Open Source tools and technologies and has the creativity to
+                formulate novel solutions and the technical chops to create and deploy them. He has never failed to
+                deliver superlative results, and I would not hesitate to recommend him to anyone seeking a top class
+                solution architect, developer or systems integrator.
+        </div>
+
+        <div class="span4">
+            <h3>Rich Lee, CEO
+                <br/>
+                <a href="http://caseflex.com" target="_blank">Caseflex</a>
+            </h3>
+        </div>
+        <div class="span8">
+            <i class="icon-quote-left icon-3x pull-left"></i>
+
+            <p>I am the CEO of small legal technology startup. I hired Andrew to set up a way for us to deploy to
+                AWS without incurring too much time or expense each time. Andrew exceeded this job in every
+                imaginable way. He set up our various production and staging environments, along with automated
+                deployment protocols using Chef. Along the way he made sure that everyone on our team understood
+                exactly what was going on. He delivered on each of the objectives we set out to work on.
+
+            <p>If you are looking for someone to not only get the job done, but also make sure you are well equipped
+                to handle things after the job is completed, Andrew is your man. He is extremely personable, very
+                responsible, and has a deep expertise of the subject matter. Highly, highly recommended.
+        </div>
+
+        <div class="span4">
+            <h3>Paul Osetinsky, CTO
+                <br/><a href="https://treatin.gs" target="_blank">Treatings</a>
+            </h3>
+        </div>
+        <div class="span8">
+            <i class="icon-quote-left icon-3x pull-left"></i>
+
+            <p>As the CTO of an NYC-based web startup, I originally sought out Andrew for his web application
+                development and scaling expertise. I was particularly impressed by his knowledge of both backend and
+                frontend technologies, as well as his real experience scaling software at Adaptly. Andrew's know-how
+                has proven to be extremely helpful for us, so much so that we have asked him to join us formally as
+                an advisor. He's been very generous with his time, and we feel lucky to be working with him. I
+                gladly recommend him to anyone looking for a web development partner!
+        </div>
+    </div>
+    <hr/>
+</div>
+
+
+<!-- How we work -->
+<!--<div id="working" class="page color-1">-->
+<!--<div class="inner-page">-->
+<!--<h2 class="page-headline">How we work</h2>-->
+<!--</div>-->
+<!--<div class="row-fluid inner-page">-->
+<!--<div class="span6">-->
+<!--<p class="lead">For as little as one week, you can have a full-time developer working in your office.</p>-->
+
+<!--<p> During that "sprint", you have that developer's exclusive attention for all hands-on-keyboard-->
+<!--programming tasks. Outside of a billable week, your developer will still be reachable by phone or email-->
+<!--to answer questions or to help plan the next sprint. It's just like having a salaried employee working-->
+<!--on multiple projects within your company, except that some of the projects will be for other clients.-->
+
+<!--<p>Of course, for significant projects, you're welcome to book your developer for multiple weeks.-->
+<!--</div>-->
+<!--<div class="span6 lazy-container">-->
+<!--<img class="lazy" width="480" height="320" src="assets/img/pixel.png"-->
+<!--data-original="assets/img/how_we_work.svg" alt=""/>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!-- About page -->
+<div id="who" class="page color-3">
+    <div class="inner-page">
+        <h2 class="page-headline">Who we are</h2>
+    </div>
+    <div class="row-fluid inner-page">
+        <div class="span6">
+            <p class="lead">We understand how difficult it is to hire developers.</p>
+
+            <p>With our previous experience both working at and running early startups, we've been on both sides of the
+                hiring table. It's tough to hire someone for a salaried position when your business is changing rapidly.
+                Defining the requirements for a new position is difficult enough, without the added difficulty of
+                finding someone who fits your needs. Working with freelancers or outsourcing agencies is frustrating
+                when you don't have any guarantee you'll be able to work with the same developers in the future.
+
+            <p>We started Lambda Labs to provide a flexible alternative to traditional software development resources.
+                We're able to augment your existing team when you need additional capacity or can help you start new
+                projects before you're ready to commit to hiring.
+        </div>
+        <div class="span6 lazy-container">
+            <img class="lazy" width="480" height="320" src="assets/img/pixel.png"
+                 data-original="assets/img/who_we_are.svg" alt=""/>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Team -->
+    <div class="row-fluid inner-page team">
+        <div class="span6">
+            <img class="lazy pull-left" width="226" height="339" src="assets/img/pixel.png"
+                 data-original="assets/img/andrew.png" alt="Andrew's charming visage"/>
+            <h4>Andrew Frankel</h4>
+
+            <p>A jack-of-all-trades technologist, Andrew has worked as a developer, sys-admin, designer, and team
+                leader. He's available to help your team with both hands-on execution and high-level strategy.</p>
+            <ul>
+                <li><a href="http://leknarf.net"><i class="icon-home"></i> leknarf.net</a></li>
+                <li><a href="mailto:andrew@leknarflabs.com"><i class="icon-envelope-alt"></i> andrew@leknarflabs.com</a>
+                </li>
+                <li class="social">
+                    <a href="https://www.facebook.com/frankel"><i class="icon-facebook-sign"></i></a>
+                    <a href="http://www.linkedin.com/profile/view?id=16906960"><i class="icon-linkedin-sign"></i></a>
+                    <a href="https://twitter.com/leknarf13"><i class="icon-twitter-sign"></i></a>
+                    <a href="https://github.com/leknarf"><i class="icon-github-sign"></i></a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="span6">
+            <img class="lazy pull-left" width="226" height="339" src="assets/img/pixel.png"
+                 data-original="assets/img/ken-ll-white.png" alt="Ken's photo"/>
+            <h4>Ken Chen</h4>
+
+            <p>A Goldman Sachs alum turned tech entrepreneur, Ken is a full-stack web developer and project manager. He
+                has worked on large, multi-year projects and regularly wins prizes at day-long hackathons.</p>
+            <ul>
+                <li><a href="mailto:ken@leknarflabs.com"><i class="icon-envelope-alt"></i> ken@leknarflabs.com</a></li>
+                <li class="social">
+                    <a href="https://www.facebook.com/profile.php?id=116331"><i class="icon-facebook-sign"></i></a>
+                    <a href="http://www.linkedin.com/pub/kenneth-chen/9/661/57a"><i class="icon-linkedin-sign"></i></a>
+                    <a href="https://github.com/Kenneth-Chen"><i class="icon-github-sign"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- About -->
+
+<div class="page color-3">
+    <a href="#inline_content"
+       class="inline scroll btn call-to-action">Start your project &rarr;</a>
+    <hr/>
+</div>
+
+<!-- Contact Us -->
+<div id="contact" class="page color-4">
+    <div class="inner-page">
+        <h2 class="page-headline">Get in touch</h2>
+    </div>
+    <div class="row-fluid inner-page contact">
+        <div class="span6">
+            <h3>How can we help?</h3>
+
+            <p> Contact us for a quote or to discuss how we can help.
+            <ul class="list-inline">
+                <div>
+                    <li><a href="mailto:andrew@leknarflabs.com"><i class="icon-envelope-alt"></i> andrew@leknarflabs.com</a>
+                    </li>
+                </div>
+                <div>
+                    <li><a href="http://www.linkedin.com/profile/view?id=16906960"><i class="icon-linkedin-sign"></i>
+                        LinkedIn</a></li>
+                </div>
+                <div>
+                    <li><a href="https://github.com/leknarf"><i class="icon-github-sign"></i> Github</a>
+                </div>
+                <div>
+                    <li><i class="icon-building"></i> Leknarf Labs <br/><i class="icon-sign-blank hidden"></i> 222
+                        Broadway, 20th Floor <br/> <i class="icon-sign-blank hidden"></i> New York, NY 10007
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="page"></div>
+</div>
+
+<!-- The footer, social media icons, and copyright -->
+<footer class="page color-5">
+    <div class="inner-page row-fluid centered">
+        <!--<div>-->
+        <!--<a href="mailto:andrew@leknarf.net">andrew@leknarf.net</a>-->
+        <!--<hr><br/>-->
+        <!--</div>-->
+
+        <div class="span12 social">
+            <a href="https://www.facebook.com/frankel"><i class="icon-facebook-sign"></i></a>
+            <a href="http://www.linkedin.com/profile/view?id=16906960"><i class="icon-linkedin-sign"></i></a>
+            <a href="https://twitter.com/leknarf13"><i class="icon-twitter-sign"></i></a>
+            <a href="https://github.com/leknarf"><i class="icon-github-sign"></i></a>
+        </div>
+    </div>
+    <div class="inner-page row-fluid copyright-container">
+        <div class="span12 text-right copyright">
+            <a href="#top" title="Got to top" class="scroll">To top <i class="icon-caret-up"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
