@@ -127,7 +127,7 @@ html {
 
 .centered {
   margin: 0 auto;
-  display:block;
+  display: block;
 }
 
 .border {
@@ -150,13 +150,14 @@ html {
   margin-right: @page-offset-right;
 }
 
-#nav .btn {
+.centered-text {
+  text-align: center;
+}
+
+#nav .brand-1 {
   margin-top: 0px;
   background-color: @dark-blueish;
   color: #ffffff;
-  &a:hover {
-    background-color: @really-dark-blueish !important;
-  }
 }
 
 .vertically-center(parent) {
@@ -179,8 +180,16 @@ html {
 }
 
 @hands-height: 374px;
-.hands {
+#hands {
   .vertically-center-tbl(@hands-height);
+}
+
+@wand-height: 220px;
+#icon-section-devs {
+  .vertically-center-tbl(@wand-height);
+  i {
+    font-size: 120px;
+  }
 }
 
 .medium-list-two-line {

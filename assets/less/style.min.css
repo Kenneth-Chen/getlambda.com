@@ -975,8 +975,11 @@ html{overflow-x:hidden}
 .border{border:1px solid #3a9ac4}
 .clearfloat{clear:both}
 .centered-list{text-align:center;margin-right:36px}
-#nav .btn{margin-top:0;background-color:#2b7797;color:#fff}#nav .btna:hover{background-color:#123240 !important}
-.hands{display:table;height:374px}.hands>div{display:table-cell;vertical-align:middle}
+.centered-text{text-align:center}
+#nav .brand-1{margin-top:0;background-color:#2b7797;color:#fff}
+#hands{display:table;height:374px}#hands>div{display:table-cell;vertical-align:middle}
+#icon-section-devs{display:table;height:220px}#icon-section-devs>div{display:table-cell;vertical-align:middle}
+#icon-section-devs i{font-size:120px}
 .medium-list-two-line{font-size:22px;font-weight:300}.medium-list-two-line li{position:relative;line-height:30px;margin-top:20px;margin-bottom:20px;margin-left:60px}.medium-list-two-line li i{position:absolute;top:50%;margin-top:-15px;height:40px;left:-50px;font-size:35px}
 #good .primary-content{width:752px}
 hr{clear:both;margin:30px auto 0 auto}

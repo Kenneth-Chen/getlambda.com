@@ -1,2 +1,2 @@
 
-Repository for http://getlambda.com
+Repository for http://leknarflabs.com
