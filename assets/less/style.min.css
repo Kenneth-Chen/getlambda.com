@@ -976,7 +976,7 @@ html{overflow-x:hidden}
 .clearfloat{clear:both}
 .centered-list{text-align:center;margin-right:36px}
 .centered-text{text-align:center}
-#nav .brand-1{margin-top:0;background-color:#2b7797;color:#fff}
+#nav .brand-1{margin-top:0;background-color:#2b7797;color:#fff;font-weight:bold}
 #hands{display:table;height:374px}#hands>div{display:table-cell;vertical-align:middle}
 #icon-section-devs{display:table;height:220px}#icon-section-devs>div{display:table-cell;vertical-align:middle}
 #icon-section-devs i{font-size:120px}
