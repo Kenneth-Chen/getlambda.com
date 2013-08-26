@@ -108,10 +108,10 @@
                 <li><a title="How it works" href="#how" class="scroll brand-3">How it works</a></li>
                 <li><a title="Testimonials" href="#testimonials" class="scroll fadeto brand-4">Testimonials</a></li>
                 <li><a title="Who we are" href="#who" class="scroll fadeto brand-3">Who we are</a></li>
-                <li><a title="For Developers" href="#developers" class="scroll fadeto brand-3">For Developers</a></li>
+                <li><a title="For Companies" href="#companies" class="scroll fadeto brand-3">For Companies</a></li>
                 <li><a title="Get in touch!" href="#contact" class="scroll brand-4">Contact</a></li>
                 <li><a title="Blog" href="http://leknarf.net" class="brand-3" target="_blank">Blog</a></li>
-                <li><a href="#inline_content" class="inline brand-1">Start your project &rarr;</a></li>
+                <li><a href="#inline_content_dev" class="inline brand-1">Get started &rarr;</a></li>
             </ul>
         </div>
     </div>
@@ -120,11 +120,10 @@
 <!-- Home Page -->
 <div id="home" class="page color-1">
     <div class="inner-page">
-        <h2 class="page-headline">Hire exceptional entrepreneurs</h2>
+        <h2 class="page-headline">Developers, get paid what you're worth.</h2>
 
-        <h3 class="page-subheadline">Lambda is an invite-only marketplace where you can hire startup founders to build
-            your
-            idea.</h3>
+        <h3 class="page-subheadline">Lambda is an exclusive marketplace for developers and entrepreneurs to find
+            high-paying contract work.</h3>
     </div>
     <div class="span8 pull-right lazy-container">
         <img class="lazy" width="600" height="400" alt="" src="assets/img/pixel.png"
@@ -132,15 +131,13 @@
     </div>
     <div class="inner-page">
         <ul class="medium-list-two-line">
-            <li><i class="icon-chevron-right"></i>Get exclusive access to entrepreneurs who wouldn't normally be on the
-                market.
+            <li><i class="icon-chevron-right"></i>Invite-only marketplace. Don't compete with low-quality talent in a
+                race to the bottom.
             </li>
-            <li><i class="icon-chevron-right"></i>Every member is an experienced entrepreneur who understands your
-                business needs.
+            <li><i class="icon-chevron-right"></i>We're developers too. Every project is screened by us to be
+                interesting and well-paying. Minimum hourly rate of $100/hr.
             </li>
-            <li><i class="icon-chevron-right"></i>Scalable, on-demand, specialized talent &mdash; get your project done
-                right
-                the first time.
+            <li><i class="icon-chevron-right"></i>We know you're busy. We take care of the paperwork and the legalese.
             </li>
         </ul>
     </div>
@@ -180,6 +177,35 @@
     </div>
 </div>
 
+
+<!-- inline colorbox developer form -->
+<div style='display:none'>
+    <div id='inline_content_dev' style='padding:10px; background:#fff;'>
+        <iframe id="JotFormIFrame_dev" onload="window.parent.scrollTo(0,0)" allowtransparency="true"
+                src="http://form.jotform.us/form/32266205963152" frameborder="0"
+                style="width:100%; height:639px; border:none;"
+                scrolling="no"></iframe>
+        <script type="text/javascript">window.handleIFrameMessage = function (e) {
+            var args = e.data.split(":");
+            var iframe = document.getElementById("JotFormIFrame_dev");
+            if (!iframe)return;
+            switch (args[0]) {
+                case "scrollIntoView":
+                    iframe.scrollIntoView();
+                    break;
+                case "setHeight":
+                    iframe.style.height = args[1] + "px";
+                    break;
+            }
+        };
+        if (window.addEventListener) {
+            window.addEventListener("message", handleIFrameMessage, false);
+        } else if (window.attachEvent) {
+            window.attachEvent("onmessage", handleIFrameMessage);
+        }</script>
+    </div>
+</div>
+
 <!-- How it works -->
 <div id="how" class="page color-3">
     <div class="inner-page">
@@ -191,7 +217,7 @@
                 <!--<img src="assets/img/istock-consultants.jpg"/>-->
                 <h3 id="real-people">
                     <div><i class="icon-comments"></i></div>
-                    We'll talk with you to understand your project
+                    We'll meet with you to understand what you're looking for.
                 </h3>
 
                 <!--<p> Proudly based in NYC, everyone on our team is available by email, phone, and in-person. You can-->
@@ -202,7 +228,7 @@
                 <!--<img src="assets/img/istock-crowd.jpg"/>-->
                 <h3>
                     <div><i class="icon-group"></i></div>
-                    We'll interview hundreds of candidates to find the best ones suited to your project.
+                    We'll interview hundreds of companies to find interesting projects just for you.
                 </h3>
 
                 <!--<p>All of our developers are available to work for you full-time, without competing obligations to other-->
@@ -215,7 +241,7 @@
                 <!--<img src="assets/img/istock-party.jpg"/>-->
                 <h3>
                     <div><i class="icon-star"></i></div>
-                    You'll meet with the top candidates and select one to join your team.
+                    You'll select the project that most interests you. Get paid handsomely.
                 </h3>
 
                 <!--<p>Salaried employees are great when you need to ensure that an individual team member is available 6-->
@@ -233,19 +259,17 @@
 <!-- Benefits -->
 <div id="benefits" class="page color-1">
     <div class="inner-page">
-        <h2 class="page-headline">All the benefits of a full-time employee, without the commitment or hassle.</h2>
+        <h2 class="page-headline">All the benefits of a full-time employer, without the commitment.</h2>
     </div>
 
     <div class="inner-page row-fluid">
         <ul class="medium-list-two-line">
-            <li><i class="icon-chevron-right"></i>Vetted &amp; Reliable - We're developers ourselves and we
-                interview every single candidate personally.
+            <li><i class="icon-chevron-right"></i>Vetted - We're developers ourselves. We only approve high-quality
+                projects.
             </li>
-            <li><i class="icon-chevron-right"></i>Pay for what you need - Book as few as 10 hours, or as many as
-                40 hours per week.
-            </li>
-            <li><i class="icon-chevron-right"></i>Rapid onboarding - Find and hire excellent people in a fraction of
-                the time. We spend time so you don't have to.
+            <li><i class="icon-chevron-right"></i>Get paid - Employers pay on average $3k-$7k per week.</li>
+            <li><i class="icon-chevron-right"></i>Flexible - Spend as little as 10 hours per week, or as much as 40
+                hours per week.
             </li>
         </ul>
     </div>
@@ -269,9 +293,12 @@
             <div>
                 <div class="pull-left">
                     <ul class="medium-list-two-line">
-                        <li><i class="icon-dollar"></i>Money-back guarantee.</li>
-                        <li><i class="icon-user"></i>Dedicated account manager so you can focus on what matters.</li>
-                        <li><i class="icon-check"></i>Payments are only released when you approve the work.</li>
+                        <li><i class="icon-check"></i>Fast &amp; Safe - Payments are held in escrow and are released as
+                            soon as work is completed.
+                        </li>
+                        <li><i class="icon-file-text-alt"></i>Easy - We'll take care of the paperwork, so you don't have
+                            to.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -283,119 +310,30 @@
 <!-- /Good -->
 
 
-<!-- Testimonials -->
-<div id="testimonials" class="page color-4">
-    <div class="inner-page">
-        <h2 class="page-headline">Testimonials</h2>
-    </div>
-    <div class="inner-page row-fluid">
-        <div class="span4">
-            <h3>Paul Conroy, CTO
-                <br/>
-                <a href="https://fullgenomes.com" target="_blank">Full Genomes</a>
-            </h3>
-        </div>
-        <div class="span8">
-            <i class="icon-quote-left icon-3x pull-left"></i>
-
-            <p>I am the CTO of a Biotech Startup - Full Genomes Corporation - and sought Andrew's help in launching
-                our website and for advice on all things technology. Andrew has been a highly efficient worker, who
-                has an impressive knowledge of Open Source tools and technologies and has the creativity to
-                formulate novel solutions and the technical chops to create and deploy them. He has never failed to
-                deliver superlative results, and I would not hesitate to recommend him to anyone seeking a top class
-                solution architect, developer or systems integrator.
-        </div>
-
-        <div class="span4">
-            <h3>Rich Lee, CEO
-                <br/>
-                <a href="http://caseflex.com" target="_blank">Caseflex</a>
-            </h3>
-        </div>
-        <div class="span8">
-            <i class="icon-quote-left icon-3x pull-left"></i>
-
-            <p>I am the CEO of small legal technology startup. I hired Andrew to set up a way for us to deploy to
-                AWS without incurring too much time or expense each time. Andrew exceeded this job in every
-                imaginable way. He set up our various production and staging environments, along with automated
-                deployment protocols using Chef. Along the way he made sure that everyone on our team understood
-                exactly what was going on. He delivered on each of the objectives we set out to work on.
-
-            <p>If you are looking for someone to not only get the job done, but also make sure you are well equipped
-                to handle things after the job is completed, Andrew is your man. He is extremely personable, very
-                responsible, and has a deep expertise of the subject matter. Highly, highly recommended.
-        </div>
-
-        <div class="span4">
-            <h3>Paul Osetinsky, CTO
-                <br/><a href="https://treatin.gs" target="_blank">Treatings</a>
-            </h3>
-        </div>
-        <div class="span8">
-            <i class="icon-quote-left icon-3x pull-left"></i>
-
-            <p>As the CTO of an NYC-based web startup, I originally sought out Andrew for his web application
-                development and scaling expertise. I was particularly impressed by his knowledge of both backend and
-                frontend technologies, as well as his real experience scaling software at Adaptly. Andrew's know-how
-                has proven to be extremely helpful for us, so much so that we have asked him to join us formally as
-                an advisor. He's been very generous with his time, and we feel lucky to be working with him. I
-                gladly recommend him to anyone looking for a web development partner!
-        </div>
-    </div>
-    <hr/>
-</div>
-
-
-<!-- How we work -->
-<!--<div id="working" class="page color-1">-->
-<!--<div class="inner-page">-->
-<!--<h2 class="page-headline">How we work</h2>-->
-<!--</div>-->
-<!--<div class="row-fluid inner-page">-->
-<!--<div class="span6">-->
-<!--<p class="lead">For as little as one week, you can have a full-time developer working in your office.</p>-->
-
-<!--<p> During that "sprint", you have that developer's exclusive attention for all hands-on-keyboard-->
-<!--programming tasks. Outside of a billable week, your developer will still be reachable by phone or email-->
-<!--to answer questions or to help plan the next sprint. It's just like having a salaried employee working-->
-<!--on multiple projects within your company, except that some of the projects will be for other clients.-->
-
-<!--<p>Of course, for significant projects, you're welcome to book your developer for multiple weeks.-->
-<!--</div>-->
-<!--<div class="span6 lazy-container">-->
-<!--<img class="lazy" width="480" height="320" src="assets/img/pixel.png"-->
-<!--data-original="assets/img/how_we_work.svg" alt=""/>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
-
 <!-- About page -->
+
 <div id="who" class="page color-3">
     <div class="inner-page">
         <h2 class="page-headline">Who we are</h2>
     </div>
-    <div class="row-fluid inner-page">
-        <div class="span6">
-            <p class="lead">We understand how difficult it is to hire developers.</p>
+    <!--<div class="row-fluid inner-page">-->
+        <!--<div class="span6">-->
+            <!--<p class="lead">We understand how difficult it is to find good, fulfilling work.</p>-->
 
-            <p>With our previous experience both working at and running early startups, we've been on both sides of the
-                hiring table. It's tough to hire someone for a salaried position when your business is changing rapidly.
-                Defining the requirements for a new position is difficult enough, without the added difficulty of
-                finding someone who fits your needs. Working with freelancers or outsourcing agencies is frustrating
-                when you don't have any guarantee you'll be able to work with the same developers in the future.
+            <!--<p>With our previous experience both working at and running early startups, we've been on both sides of the-->
+                <!--hiring table.-->
+            <!---->
+            <!--<p>We started Lambda to provide a flexible alternative to traditional software development resources.-->
+                <!--We're able to augment your existing team when you need additional capacity or can help you start new-->
+                <!--projects before you're ready to commit to hiring.-->
+        <!--</div>-->
+        <!--<div class="span6 lazy-container">-->
+            <!--<img class="lazy" width="480" height="320" src="assets/img/pixel.png"-->
+                 <!--data-original="assets/img/who_we_are.svg" alt=""/>-->
+        <!--</div>-->
+    <!--</div>-->
 
-            <p>We started Lambda to provide a flexible alternative to traditional software development resources.
-                We're able to augment your existing team when you need additional capacity or can help you start new
-                projects before you're ready to commit to hiring.
-        </div>
-        <div class="span6 lazy-container">
-            <img class="lazy" width="480" height="320" src="assets/img/pixel.png"
-                 data-original="assets/img/who_we_are.svg" alt=""/>
-        </div>
-    </div>
-
-    <hr>
+    <!--<hr>-->
 
     <!-- Team -->
     <div class="row-fluid inner-page team">
@@ -441,19 +379,19 @@
 
 <!-- Call to action 2 -->
 <div class="page color-3">
-    <a href="#inline_content"
-       class="inline btn call-to-action">Start your project &rarr;</a>
+    <a href="#inline_content_dev"
+       class="inline btn call-to-action">Get started &rarr;</a>
     <hr/>
 </div>
 
-<!-- For Developers -->
-<div id="developers" class="page color-4">
+<!-- For Companies -->
+<div id="companies" class="page color-4">
     <div class="inner-page">
-        <h2 class="page-headline">For developers</h2>
+        <h2 class="page-headline">For Companies</h2>
     </div>
     <div class="row-fluid inner-page">
         <div class="span10 offset1">
-            <h3 class="centered-text">Quality projects worth your time.</h3>
+            <h3 class="centered-text">Hire exceptional entrepreneurs.</h3>
 
             <div id="icon-section-devs" class="span3 pull-right centered">
                 <div>
@@ -466,14 +404,13 @@
 
             <div class="inner-page span9">
                 <ul class="medium-list-two-line">
-                    <li><i class="icon-bookmark"></i>Hand-picked, curated projects.</li>
-                    <li><i class="icon-dollar"></i>Minimum hourly rate of $100/hr.</li>
-                    <li><i class="icon-calendar"></i>Payment escrow ensures you get paid on time.</li>
-                    <li><i class="icon-file-text-alt"></i>We handle all the legalese.</li>
+                    <li><i class="icon-star"></i>Get exclusive access to entrepreneurs who wouldn't normally be on the market.</li>
+                    <li><i class="icon-thumbs-up"></i>Every member is an experienced entrepreneur who understands your business needs.</li>
+                    <li><i class="icon-bullseye"></i>Scalable, on-demand, specialized talent — get your project done right the first time.</li>
                 </ul>
             </div>
             <br/>
-            <script type="text/javascript" src="http://form.jotform.us/jsform/32266205963152"></script>
+            <script type="text/javascript" src="http://form.jotform.us/jsform/32266336179156"></script>
         </div>
     </div>
     <hr/>
