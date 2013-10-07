@@ -1,0 +1,28 @@
+/ inline colorbox company project form
+%div{style: "display:none"}
+  #company_form{style: "padding:10px; background:#fff;"}
+    #crmWebToEntityForm
+      %meta{content: "text/html;charset = UTF-8", "http-equiv" => "content-type"}
+      .form-header-group
+        %h1.form-header{style: "color: black;"} Hire a Lambda consultant
+        %h2.form-subHeader{style: "color: black;"} Tell us a little about what you're looking for and we'll be in touch
+      %form{"accept-charset" => "UTF-8", action: "https://crm.zoho.com/crm/WebToLeadForm", method: "POST", name: "WebToLeads95594400000008904", onsubmit: "javascript:document.charset=\"UTF-8\"; return checkMandatery()"}
+        %input{name: "xnQsjsdp", style: "display:none;", type: "text", value: "vs0sAR@C1L5thYo@kRl79w$$"}
+        %input#zc_gad{name: "zc_gad", type: "hidden", value: ""}
+        %input{name: "xmIwtLD", style: "display:none;", type: "text", value: "TYZ3M4hl@jML2DxZUHXOVvGCpUdN@P5O"}
+        %input{name: "actionType", style: "display:none;", type: "text", value: "TGVhZHM="}
+        %input{name: "returnURL", style: "display:none;", type: "text", value: "http://getlambda.com/thanks-companies/"}
+        .form-line
+          %label.form-label-left First Name:
+          %input.form-textbox{class: "validate[required]", maxlength: "\r\n40", name: "First Name", type: "text"}
+        .form-line
+          %label.form-label-left Last Name:
+          %input.form-textbox{class: "validate[required]", maxlength: "80", name: "Last Name", type: "text"}
+        .form-line
+          %label.form-label-left Email:
+          %input.form-textbox{class: "validate[required]", maxlength: "100", name: "Email", type: "text"}
+        .form-line
+          %label.form-label-left Description:
+          %input.form-textbox{maxlength: "32000", name: "Description", type: "text"}
+        .form-buttons-wrapper{style: "text-align: center;"}
+          %input.form-submit-button{name: "save", type: "submit", value: "Submit"}

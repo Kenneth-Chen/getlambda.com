@@ -1,0 +1,128 @@
+$page-offset-right: 36px;
+$blueish: #4baad3;
+$dark-blueish: #2b7797;
+$really-dark-blueish: #123240;
+
+.clearfloat {
+  clear: both;
+}
+
+.page-headline {
+  text-align: left;
+}
+
+.centered-list {
+  text-align: center;
+  margin-right: $page-offset-right;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+#nav .brand-1 {
+  margin-top: 0px;
+  background-color: $dark-blueish;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@mixin vertically-center($height, $margin-top-offset:0px) {
+  position: absolute;
+  top: 50%;
+  margin-top: (-$height/2 + $margin-top-offset);
+  height: $height;
+}
+
+@mixin vertically-center-tbl($height) {
+  display: table;
+  height: $height;
+  >div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.medium-list-two-line {
+  font-size: 22px;
+  font-weight: 300;
+  li {
+    position: relative;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    i {
+      @include vertically-center(40px, 5px);
+      left: -50px;
+      font-size: 35px;
+    }
+  }
+}
+
+
+#good .primary-content {
+  width: (400px+312px+40px);
+}
+
+hr {
+  clear: both;
+  margin: 30px auto 0px auto;
+}
+
+.color-1 hr {
+  border: 1px solid $blueish;
+}
+
+.cta-container {
+  background-color: $blueish;
+  hr {
+    border: 1px solid $really-dark-blueish;
+  }
+}
+
+.call-to-action {
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  width: 300px;
+  left: (-150px - $page-offset-right/2);
+  margin-left: 50%;
+}
+
+.white {
+  text-color: white !important;
+}
+
+#consultants ul.features h3 {
+  text-align: center;
+  div {
+    width:100%;
+    text-color: white;
+    i {
+      font-size: 120px;
+    }
+    padding-bottom: 20px;
+  }
+}
+
+#good .primary-content {
+  padding-bottom: 40px;
+  img {
+    padding-left: 40px;
+  }
+}
+
+footer .copyright-container {
+  max-width: 100%;
+  background-color: #26292B;
+  padding: 0px;
+}
+
+footer > div.inner-page:first-child {
+  background-color: #31363A;
+  max-width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}

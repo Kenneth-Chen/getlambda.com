@@ -1,0 +1,38 @@
+/ inline colorbox developer form
+%div{style: "display:none"}
+  #consultant_form{style: "padding:10px; background:#fff;"}
+    #crmWebToEntityForm
+      %meta{content: "text/html;charset = UTF-8", "http-equiv" => "content-type"}
+      .form-header-group
+        %h1.form-header{style: "color: black;"} Become a Lambda consultant
+        %h2.form-subHeader{style: "color: black;"} Let us know a little about yourself and we'll be in touch
+      %form{"accept-charset" => "UTF-8", action: "https://crm.zoho.com/crm/WebToContactForm", method: "POST", name: "WebToContacts955944000000064847", onsubmit: "javascript:document.charset=\"UTF-8\""}
+        %input{name: "xnQsjsdp", style: "display:none;", type: "text", value: "vs0sAR@C1L5thYo@kRl79w$$"}
+        %input#zc_gad{name: "zc_gad", type: "hidden", value: ""}
+        %input{name: "xmIwtLD", style: "display:none;", type: "text", value: "TYZ3M4hl@jNnPXqthnWRjPGCpUdN@P5O"}
+        %input{name: "actionType", style: "display:none;", type: "text", value: "Q29udGFjdHM="}
+        %input{name: "returnURL", style: "display:none;", type: "text", value: "http://getlambda.com/thanks/"}
+        .form-line
+          %label.form-label-left First Name:
+          %input.form-textbox{class: "validate[required]", maxlength: "\r\n40", name: "First Name", type: "text"}
+        .form-line
+          %label.form-label-left Last Name:
+          %input.form-textbox{class: "validate[required]", maxlength: "80", name: "Last Name", type: "text"}
+        .form-line
+          %p
+            %label.form-label-left Email:
+            %input.form-textbox{class: "validate[required]", maxlength: "100", name: "Email", type: "text"}
+        .form-line
+          %p
+            Please give us one or both of the items below
+        .form-line
+          %label.form-label-left Github:
+          %input.form-textbox{class: "validate[required]", maxlength: "255", name: "CONTACTCF1", type: "text"}
+        .form-line
+          %label.form-label-left LinkedIn:
+          %input.form-textbox{class: "validate[required]", maxlength: "255", name: "CONTACTCF2", type: "text"}
+        / hidden fields
+        %input{name: "CONTACTCF3", type: "hidden", value: "Employee"}
+        %input{name: "Lead Source", type: "hidden", value: "Web"}
+        .form-buttons-wrapper{style: "text-align: center;"}
+          %input.form-submit-button{name: "save", type: "submit", value: "Submit"}
