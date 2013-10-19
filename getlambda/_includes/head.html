@@ -1,0 +1,53 @@
+<head>
+<title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="Twitter bootstrap theme">
+  <meta name="author" content="prettystrap">
+
+  {% css_asset_tag global %}
+    - /_assets/vendor/bootstrap.css
+    - /_assets/vendor/the-story.css
+    - /_assets/vendor/colorbox.css
+
+    - /_assets/getlambda.scss
+  {% endcss_asset_tag %}
+
+  {% javascript_asset_tag global %}
+    - /_assets/vendor/js/jquery-1.10.2.js
+
+    - /_assets/vendor/js/bootstrap.js
+    - /_assets/vendor/js/hashchange.js
+    - /_assets/vendor/js/jquery.colorbox.js
+    - /_assets/vendor/js/jquery.history.js
+    - /_assets/vendor/js/lazyload.js
+    - /_assets/vendor/js/lightbox.js
+    - /_assets/vendor/js/main.js
+    - /_assets/vendor/js/spin.js
+
+    - /_assets/getlambda.coffee
+  {% endjavascript_asset_tag %}
+
+  {% css_asset_tag form %}
+    - /_assets/form.css
+  {% endcss_asset_tag %}
+  {% javascript_asset_tag global %}
+    - /_assets/form.coffee
+  {% endjavascript_asset_tag %}
+
+  <!--Import Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    {% javascript_asset_tag ie8 %}
+      - /_assets/vendor/js/html5shiv.js
+    {% endjavascript_asset_tag %}
+  <![endif]-->
+
+  {% include google_analytics.html %}
+</head>
+
