@@ -1,0 +1,17 @@
+---
+layout: page
+title: Lambda Blog
+---
+
+#home.page.color-1
+  .inner-page
+    %h2.page-headline
+      Lambda blog
+    %h3
+      Making the world a better place, one developer at a time
+
+{% assign i = 0 %}
+{% for post in site.posts reverse %}
+    {% include archive_post.haml %}
+    {% assign i = i+1 %}
+{% endfor %}

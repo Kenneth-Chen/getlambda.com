@@ -1,3 +1,15 @@
-name: Your New Jekyll Site
+name: Lambda
 markdown: redcarpet
 pygments: true
+domain: getlambda.com
+excerpt_separator: <!--more-->
+
+url: http://getlambda.com
+title: Lambda
+subtitle: A talent agency for exceptional developers
+author: Lambda
+simple_search: http://google.com/search
+
+# Disqus Comments
+disqus_short_name: getlambda
+disqus_show_comment_count: true
