@@ -1,0 +1,15 @@
+---
+layout: page
+title: Lambda Blog
+---
+
+#home.page.color-1
+  .inner-page
+    %h2.page-headline
+      Lambda blog
+
+{% for post in site.posts reverse %}
+.row.inner-page
+  .col-md-12
+    {% include archive_post.haml %}
+{% endfor %}
