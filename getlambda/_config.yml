@@ -2,3 +2,4 @@ name: Lambda
 markdown: redcarpet
 pygments: true
 domain: getlambda.com
+excerpt_separator: <!--more-->

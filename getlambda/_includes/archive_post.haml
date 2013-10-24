@@ -1,5 +1,24 @@
 %section.archives
-  %article
-    .date
-      {{ post.date | date: "%b %e, %Y" }}:
-      %a{href: "{{ root_url }}{{ post.url }}"} {{post.title}}
+  %article.page.color-4
+
+    .inner-page
+      %h2.page-headline
+        %a{href: "{{ root_url }}{{ post.url }}", target: "_blank"} {{ post.title }}
+
+      .date
+        {{ post.date | date: "%B %e, %Y" }}
+
+      .sharing
+      {% unless page.sharing == false %}
+        {% include post/sharing.haml %}
+      {% endunless %}
+
+      .row.inner-page
+        .col-md-6.lazy-container
+          %img.figurette.lazy{alt: "Chasing down talent is hard", "data-original" => "/img/running.svg", height: "320", width: "480", src: "/img/pixel.png"}
+        .col-md-6
+          .div
+            {{ post.excerpt }}
+          .div
+            %a.btn.btn-primary.btn-centered.centered-text{href: "{{ root_url }}{{ post.url }}", target: "_blank"}
+              Read more &rarr;
