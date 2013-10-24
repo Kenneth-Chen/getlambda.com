@@ -1,15 +1,5 @@
 %section.archives
-  %h1.year {{ post.date | date: "%Y" }}
   %article
-    .meta
-      %span.date {{ post.date | date: "%b %e" }}
-
-    %br
-    %span.tags {% include post/categories.html %}
-
-    {% if site.disqus_short_name and post.comments == true and site.disqus_show_comment_count == true %}
-      %span.comments
-        %a{href: "{{ root_url }}{{ post.url }}#disqus_thread"} Comments
-    {% endif %}
-  %h1.title
-    %a{href: "{{ root_url }}{{ post.url }}"} {{post.title}}
+    .date
+      {{ post.date | date: "%b %e, %Y" }}:
+      %a{href: "{{ root_url }}{{ post.url }}"} {{post.title}}
