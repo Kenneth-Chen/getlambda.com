@@ -1,0 +1,19 @@
+---
+layout: page
+title: Lambda Blog
+---
+
+<div id="home" class="page color-1">
+  <div class="inner-page">
+    <h2 class="page-headline">Lambda blog</h2>
+    <h3>Making the world a better place, one developer at a time</h3>
+  </div>
+</div>
+
+<section class="archives">
+{% for post in site.posts reverse %}
+  <div class="col-md-12">
+  {% include index/archives.html %}
+  </div>
+{% endfor %}
+</section>
