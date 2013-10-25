@@ -113,11 +113,13 @@ hr {
   }
 }
 
-.year {
-  position: absolute;
-  left: 150px;
+.date:before {
+  font-family: 'FontAwesome';
+  content: "\f073";
+  margin-right: 10px;
 }
 
+/* blog archives list */
 section.archives {
   margin: 50px 100px 50px 150px;
 }
@@ -126,6 +128,7 @@ article.row {
   margin-right: 50px;
   .meta {
     float: right;
+    text-align: right;
     top: 0px;
     height: 50px;
     margin: 20px 0px 20px 20px;
@@ -137,13 +140,20 @@ article.row {
     margin: 20px 0px;
   }
 }
-
-.date:before {
-  font-family: 'FontAwesome';
-  content: "\f073";
-  margin-right: 10px;
+.year {
+  position: absolute;
+  left: 150px;
 }
 
+/* blog listing */
+#home.page {
+  padding-bottom: 20px;
+}
+article.page {
+  padding-top: 0px;
+}
+
+/* blog post */
 #post-page {
   padding: 50px;
 }
@@ -153,6 +163,7 @@ img.post-image {
   padding: 0px 0px 50px 50px;
 }
 
+/* generic */
 footer .copyright-container {
   max-width: 100%;
   background-color: #26292B;

@@ -3,34 +3,33 @@
 {% else %}
   {% assign color_class = "color-3" %}
 {% endif %}
-%section.archives
-  %article.page.{{color_class}}
+%article.page.{{color_class}}
 
-    .inner-page
-      %h2.page-headline
-        %a{href: "{{ root_url }}{{ post.url }}", target: "_blank"} {{ post.title }}
+  .inner-page
+    %h2.page-headline
+      %a{href: "{{ root_url }}{{ post.url }}", target: "_blank"} {{ post.title }}
 
-      .date
-        {{ post.date | date: "%B %e, %Y" }}
+    .date
+      {{ post.date | date: "%B %e, %Y" }}
 
-      .sharing
-        %p
-          .addthis_toolbox.addthis_default_style.addthis_32x32_style
-            %a.addthis_button_preferred_1
-              %a.addthis_button_preferred_2
-              %a.addthis_button_preferred_3
-              %a.addthis_button_preferred_4
-              %a.addthis_button_compact
-            %script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_profile_id }}"}
+    .sharing
+      %p
+        .addthis_toolbox.addthis_default_style.addthis_32x32_style
+          %a.addthis_button_preferred_1
+            %a.addthis_button_preferred_2
+            %a.addthis_button_preferred_3
+            %a.addthis_button_preferred_4
+            %a.addthis_button_compact
+          %script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_profile_id }}"}
 
-      .row.inner-page
-        .col-md-6
-          .excerpt
-            {{ post.excerpt }}
-          .btn-read-more
-            %a.btn.btn-primary.btn-centered.centered-text{href: "{{ root_url }}{{ post.url }}", target: "_blank"}
-              Read more &rarr;
-        {% if post.image %}
-        .col-md-6.lazy-container
-          %img.figurette.lazy{"data-original" => "{{ post.image }}", height: "{{ post.image_height }}", width: "{{ post.image_width }}", src: "{{ post.image }}" }
-        {% endif %}
+    .row.inner-page
+      .col-md-6
+        .excerpt
+          {{ post.excerpt }}
+        .btn-read-more
+          %a.btn.btn-primary.btn-centered.centered-text{href: "{{ root_url }}{{ post.url }}", target: "_blank"}
+            Read more &rarr;
+      {% if post.image %}
+      .col-md-6.lazy-container
+        %img.figurette.lazy{"data-original" => "{{ post.image }}", height: "{{ post.image_height }}", width: "{{ post.image_width }}", src: "{{ post.image }}" }
+      {% endif %}

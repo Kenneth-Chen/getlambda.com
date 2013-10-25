@@ -12,8 +12,6 @@ title: Lambda Blog
 
 {% assign i = 0 %}
 {% for post in site.posts reverse %}
-.row.inner-page
-  .col-md-12
     {% include archive_post.haml %}
     {% assign i = i+1 %}
 {% endfor %}
