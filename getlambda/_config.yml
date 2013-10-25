@@ -3,3 +3,7 @@ markdown: redcarpet
 pygments: true
 domain: getlambda.com
 excerpt_separator: <!--more-->
+
+# Disqus Comments
+disqus_short_name: leknarf
+disqus_show_comment_count: true

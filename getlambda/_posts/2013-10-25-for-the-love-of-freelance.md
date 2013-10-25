@@ -3,6 +3,10 @@ layout: post
 title: For The Love Of Freelance - The Top 5 Reasons A Great Freelance Developer Makes Great Business Sense
 date: 2013-10-25 12:00:00
 categories:
+image: /img/stock-illustration-20640628-team-work.jpg
+image_width: 380
+image_height: 350
+comments: true
 ---
 
 Like any entrepreneur, freelance developers are passionate about what they do. They know their industry. And they’re driven to be the best. Having a short burst of this kind a player on your team could be exactly what your business needs. Here are the top 5 reasons why:
@@ -16,8 +20,6 @@ Freelance developers may charge higher hourly or day rates, but in the end they 
 You also save on overhead. With freelance, you don’t pay for vacations, health insurance or other HR benefits. Depending on the contract, you may not have to pay taxes. Freelance costs may even be considered a deductible business expense. Plus, since their work is their passion, freelancers will arrive at your project with the best software and top-of-the-line equipment.
 
 #2 Freelancers Are Flexible
-
-<img src="img/stock-illustration-20640628-team-work.jpg"/>
 
 With freelance developers, you only pay for the time you need. So when your workflow goes up, you can bring in a resource. When it goes down, you can let that resource go.
 
