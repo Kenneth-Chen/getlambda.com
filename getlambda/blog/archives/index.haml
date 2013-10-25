@@ -10,8 +10,8 @@ title: Lambda Blog
     %h3
       Making the world a better place
 
+%section.archives
 {% for post in site.posts reverse %}
-.row.inner-page
   .col-md-12
-    {% include index/archives.haml %}
+  {% include index/archives.haml %}
 {% endfor %}

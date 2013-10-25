@@ -1,5 +1,10 @@
+{% if i % 2 == 0 %}
+  {% assign color_class = "color-4" %}
+{% else %}
+  {% assign color_class = "color-3" %}
+{% endif %}
 %section.archives
-  %article.page.color-4
+  %article.page.{{color_class}}
 
     .inner-page
       %h2.page-headline
@@ -9,16 +14,21 @@
         {{ post.date | date: "%B %e, %Y" }}
 
       .sharing
-      {% unless page.sharing == false %}
-        {% include post/sharing.haml %}
-      {% endunless %}
+        %p
+          .addthis_toolbox.addthis_default_style.addthis_32x32_style
+            %a.addthis_button_preferred_1
+              %a.addthis_button_preferred_2
+              %a.addthis_button_preferred_3
+              %a.addthis_button_preferred_4
+              %a.addthis_button_compact
+            %script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_profile_id }}"}
 
       .row.inner-page
-        .col-md-6.lazy-container
-          %img.figurette.lazy{alt: "Chasing down talent is hard", "data-original" => "/img/running.svg", height: "320", width: "480", src: "/img/pixel.png"}
         .col-md-6
           .div
             {{ post.excerpt }}
           .div
             %a.btn.btn-primary.btn-centered.centered-text{href: "{{ root_url }}{{ post.url }}", target: "_blank"}
               Read more &rarr;
+        .col-md-6.lazy-container
+          %img.figurette.lazy{alt: "Chasing down talent is hard", "data-original" => "/img/running.svg", height: "320", width: "480", src: "/img/pixel.png"}
