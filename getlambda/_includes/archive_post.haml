@@ -23,13 +23,13 @@
           %script{:src => "//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_profile_id }}"}
 
     .row.inner-page
-      .col-md-6
+      .col-md-8
         .excerpt
           {{ post.excerpt }}
         .btn-read-more
           %a.btn.btn-primary.btn-centered.centered-text{href: "{{ root_url }}{{ post.url }}", target: "_blank"}
             Read more &rarr;
       {% if post.image %}
-      .col-md-6.lazy-container
-        %img.figurette.lazy{"data-original" => "{{ post.image }}", height: "{{ post.image_height }}", width: "{{ post.image_width }}", src: "{{ post.image }}" }
+      .col-md-4.lazy-container
+        %img.lazy{"data-original" => "{{ post.image }}", height: "{{ post.image_preview_height }}", width: "{{ post.image_preview_width }}", src: "{{ post.image }}" }
       {% endif %}
