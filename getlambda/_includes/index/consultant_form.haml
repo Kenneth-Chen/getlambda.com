@@ -5,7 +5,7 @@
       %meta{content: "text/html;charset = UTF-8", "http-equiv" => "content-type"}
       .form-header-group
         %h1.form-header{style: "color: black;"} Become a Lambda consultant
-        %h2.form-subHeader{style: "color: black;"} Let us know a little about yourself and we'll be in touch
+        %h3.form-subHeader{style: "color: black;"} Let us know a little about yourself and we'll be in touch
       %form{"accept-charset" => "UTF-8", action: "https://crm.zoho.com/crm/WebToContactForm", method: "POST", name: "WebToContacts955944000000064847", onsubmit: "javascript:document.charset=\"UTF-8\""}
         %input{name: "xnQsjsdp", style: "display:none;", type: "text", value: "vs0sAR@C1L5thYo@kRl79w$$"}
         %input#zc_gad{name: "zc_gad", type: "hidden", value: ""}
@@ -19,9 +19,12 @@
           %label.form-label-left Last Name:
           %input.form-textbox{class: "validate[required]", maxlength: "80", name: "Last Name", type: "text"}
         .form-line
+          %label.form-label-left Email:
+          %input.form-textbox{class: "validate[required]", maxlength: "100", name: "Email", type: "text"}
+        .form-line
           %p
-            %label.form-label-left Email:
-            %input.form-textbox{class: "validate[required]", maxlength: "100", name: "Email", type: "text"}
+            %label.form-label-left Location:
+            %input.form-textbox{class: "validate[required]", maxlength: "100", name: "Mailing City", type: "text"}
         .form-line
           %p
             Please give us one or both of the items below
