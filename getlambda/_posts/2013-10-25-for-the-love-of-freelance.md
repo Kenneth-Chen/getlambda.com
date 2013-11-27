@@ -11,7 +11,7 @@ image_preview_height: 250
 comments: true
 ---
 
-Like any entrepreneur, freelance developers are passionate about what they do. They know their industry. And they’re driven to be the best. Having a short burst of this kind a player on your team could be exactly what your business needs. Here are the top 5 reasons why:
+Like any entrepreneur, freelance developers are passionate about what they do. They know their industry. And they’re driven to be the best. Having a short burst of this kind of player on your team could be exactly what your business needs. Here are the top 5 reasons why:
 
 <!--more-->
 
@@ -39,7 +39,7 @@ By hiring from a freelance pool you have the opportunity to get the best talent 
 
 # 5 Freelancers Bank On Their Reputation. Literally.
 
-Freelancers know that their next job depends on hitting their current assignment out of the park. The success of their business comes from their personal network based on successful projects and engagements. They need to put your business success in their portfolio. And they know, that nobody will rehire or even recommend a mediocre resource.  
+Freelancers know that their next job depends on hitting their current assignment out of the park. The success of their business comes from their personal network based on successful projects and engagements. They need to put your business success in their portfolio. And they know, that nobody will rehire or even recommend a mediocre resource.
 
 In a nutshell, a freelance developer, who’s worth his or her rate, will come in, do your work and then happily get off your payroll -- that’s a business solution you won’t want to pass up.
 
