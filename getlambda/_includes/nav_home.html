@@ -1,22 +1,44 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="navbar-container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <i class="icon-reorder"></i>
-      </button>
-      <a class="navbar-brand" href="http://getlambda.com">Lambda</a>
+<!-- NAVIGATION -->
+<nav class="fixed-top" id="navigation">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span12 center">
+                <!-- LOGO -->
+                <a class="brand pull-left" href="./">
+                    Lambda
+                    <!-- <img src="assets/images/logo.png" alt="Treble"> -->
+                </a>
+                <!-- END LOGO -->
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+                <!-- END MOBILE MENU BUTTON -->
+                
+                <!-- MAIN MENU -->
+                <ul id="main-menu" class="nav-collapse collapse">
+                    <li><a href="" onclick="window.location='index.html#page-welcome'">Home</a></li>
+                    <li><a href="" onclick="window.location='index.html#page-work'">Work</a></li>
+                    <li><a href="" onclick="window.location='talent.html'">Talent</a></li>
+                    <li><a href="" onclick="window.location='about.html'">About</a></li>
+                    <li><a href="" onclick="window.location='contact.html'">Contact</a></li>
+                </ul>
+                <!-- END MAIN MENU -->
+                
+                <!-- SOCIAL ICONS -->
+                <div class="social-icons hover-big pull-right">
+                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                </div>
+                <!-- END SOCIAL ICONS -->
+            </div>
+        </div>
     </div>
-    <div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a title="Why hire a Lambda consultant?" href="#companies" class=" scroll brand-4">For Companies</a></li>
-        <li><a title="Why become a Lambda consultant?" href="#consultants" class="scroll brand-3">For Consultants</a></li>
-        <li><a title="Who we are" href="#who" class="scroll fadeto brand-3">Who we are</a></li>
-        <li><a title="Get in touch!" href="#contact" class="scroll brand-4">Contact</a></li>
-        <li><a title="Blog" href="//{{ site.domain }}/blog/" class="brand-3">Blog</a></li>
-        <li><a style="background-color: #4baad3;" href="#company_form" class="company-form brand-1">Hire Lambda &rarr;</a></li>
-        <li><a style="background-color: #4baad3;" href="#consultant_form" class="consultant-form brand-1">Join Lambda &rarr;</a></li>
-      </ul>
-    </div>
-  </div><!-- /.navbar-container -->
 </nav>
+<!-- END NAVIGATION -->
