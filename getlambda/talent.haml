@@ -4,8 +4,7 @@ title: Lambda - startup engineering
 ---
 
 / PAGE
-#page-features.pages.paralax
-  .overlay
+#page-features.pages.white.paralax.page-features
   .container
     / Header
     %header
@@ -29,6 +28,12 @@ title: Lambda - startup engineering
               %strong Associates
             tend to be freelancers with 3-5+ years of development or design experience. They're highly motivated, are experts in agile methodoglies, and are up-to-date on software development best practices. They're very, very good at what they do.
       %hr/
+/ END PAGE
+
+/ PAGE
+.pages
+  .container
+    %header
       %h4 We're not just developers
       .row
         .span8.offset2
@@ -71,6 +76,9 @@ title: Lambda - startup engineering
       / End Article
     / End Header
 
+/ PAGE
+#page-features.pages.white.paralax.page-features
+  .container
     / Header
     %header
       %h3 Why should I become a Lambda associate?
@@ -124,52 +132,7 @@ title: Lambda - startup engineering
     / End Header
 
 / END PAGE
-/ PAGE | FEATURES
-#page-features.pages.white.paralax.page-features
-  .overlay
-  .container
-    / Header
-    %header
-      %h4.line-divider
-      %h1 The Process
-      .row
-        .span8.offset2
-          %p
-            First, setup a consultation with us. We'll work with you to understand the scope of your project and what you're trying to accomplish. We'll work with you closely to ensure that your project gets done.
-            
-            To best prepare for the first meeting, [link] check out this guide.
-            
-            We use agile methodologies.
-            
-            Questions we'll ask you:
-          %ul{style: "list-style-type: none;"}
-            %li
-              What are the requirements?
-            %li
-              What's your timeframe?
-            %li
-              What's your budget?
-    / End Header
-    / Article
-    %article
-      / Features blocks
-      .row-fluid
-        .span4.center
-          %img{alt: "Treble", src: "assets/images/pages/features/about01.png"}/
-          %h5 Responsive
-          %p.smallFontBy08.cutBy10 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        .span4.center
-          %img{alt: "Treble", src: "assets/images/pages/features/about02.png"}/
-          %h5 Bootstrap based
-          %p.smallFontBy08.cutBy10 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        .span4.center
-          %img{alt: "Treble", src: "assets/images/pages/features/about03.png"}/
-          %h5 Easy to customize
-          %p.smallFontBy08.cutBy10 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      .row-fluid
-        .span8.offset2
-    / End Article
-/ END PAGE | FEATURES
+
 
 / JQUERY
 %script{src: "assets/js/jquery-1.10.2.min.js", type: "text/javascript"}
