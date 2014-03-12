@@ -3,7 +3,7 @@ layout: home_page
 title: Lambda - startup engineering
 ---
 
-%video#big-video{autoplay: "", loop: "", "data-setup" => "{}", poster: "null", preload: "auto", src: "assets/factory.mp4", style: "position: absolute; width: 100%;", "webkit-playsinline" => ""}
+%video#big-video{autoplay: "autoplay", loop: "true", "data-setup" => "{}", poster: "null", preload: "auto", src: "assets/factory.mp4", style: "position: absolute; width: 100%;", "webkit-playsinline" => ""}
   %source{src: "assets/factory.mp4", type: "video/mp4"}
 
 / PAGE | WELCOME
@@ -189,17 +189,16 @@ title: Lambda - startup engineering
         Params:
         plugin-filter-elements: Defines items for filtering, each item has class which defines filter value.
         portfolio-items: Customise portfolio items for hover effect.
-      %ul.thumbnails.plugin-filter-elements.portfolio-items
-        %li.span4.mix
-        %li.span4.mix
-          %a#project1{"data-destination" => "portfolio-items", "data-insert" => "before", href: "#pages/portfolio/project_1.html"}
-            / Portfolio image
-            %img{alt: "Cost of Carbon", src: "assets/images/pages/work/coc-screenshot.png"}/
-            / Portfolio name, activated on hover
-            .portfolio-overlay
-              %h4 Cost of Carbon
-        %li.span4.mix
-        /
+      -# %ul.thumbnails.plugin-filter-elements.portfolio-items
+      -#   %li.span4.mix
+      -#   %li.span4.mix
+      -#     %a#project1{"data-destination" => "portfolio-items", "data-insert" => "before", href: "#pages/portfolio/project_1.html"}
+      -#       / Portfolio image
+      -#       %img{alt: "Cost of Carbon", src: "assets/images/pages/work/coc-screenshot.png"}/
+      -#       / Portfolio name, activated on hover
+      -#       .portfolio-overlay
+      -#         %h4 Cost of Carbon
+      -#   %li.span4.mix
 
     / End Article
     / Footer
