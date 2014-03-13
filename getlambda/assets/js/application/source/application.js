@@ -5,7 +5,7 @@ $(document).ready(function(){
     var pageHeight = $(window).height();
     var pageWidth = $(window).width();
     var navigationHeight = $("#navigation").outerHeight();
-    
+
     /**
     *   ON RESIZE, check again
     */
@@ -21,12 +21,7 @@ $(document).ready(function(){
 
     /* Initialize scroll so if user droped to other part of page then home page. */
     $(window).trigger('scroll');
-    
-    /* Fix navigation. */
-    $('#navigation').fixedonlater({
-        speedDown: 250,
-        speedUp: 100
-    });
+
     
     /* Centralize elements on page. */
     $('.centralized').centralized({
@@ -64,8 +59,9 @@ $(document).ready(function(){
     if(pageWidth > 980){
         /* Dont user paralax for tablet and mobile devices. */
         $('#page-welcome').parallax("0%", 0.2);
-        $('#page-features').parallax("0%", 0.07);
-        $('#page-twitter').parallax("0%", 0.1);
+        $('#page-talent').parallax("0%", 0.07);
+        $('#page-about').parallax("0%", 0.1);
+        $('#page-contact').parallax("0%", 0.1);
     }
     
     /* Emulate touch on table/mobile touchstart. */
@@ -181,6 +177,18 @@ $(document).ready(function(){
         interval: 7000,
         pause: "hover"
     });
+
+    var vidElement = $(".big-video");
+    if (typeof vidElement.loop == 'boolean') { // loop supported
+        vidElement.loop = true;
+    } else { // loop property not supported
+        vidElement.on('ended', function () {
+        this.currentTime = 0;
+        this.play();
+        }, false);
+    }
+    vidElement.play();
+
 });
 
 
