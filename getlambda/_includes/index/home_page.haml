@@ -1,27 +1,96 @@
-#home.page.color-1
-  .inner-page
-    %h2.page-headline
-      Lambda is a talent agency for exceptional developers, designers, and technology professionals
-  .row.inner-page
-    .col-md-12
-      %p.lead We represent the technology industry's most exceptional talent and connect them with companies seeking their expertise.
+%video.big-video{autoplay: "autoplay", loop: "true", "data-setup" => "{}", poster: "null", preload: "auto", src: "assets/factory.mp4", "webkit-playsinline" => ""}
+  %source{src: "assets/factory.mp4", type: "video/mp4"}
 
-    .col-md-6.lazy-container
-      %img.lazy{alt: "Working together with a laptop. That's how we roll.", "data-original" => "/img/home.svg", height: "400", src: "/img/pixel.png", width: "600"}/
+/ PAGE | WELCOME
+#page-welcome.pages.white.paralax.page-welcome
+  .overlay
+  / Centralized content
+  .centralized
+    .container
+      .row-fluid
+        .span12.center
+          #welcome-messages.line-divider
+            %ul.slides
+              %li
+                %h1 Lambda
+          %p builds startups
+          %p Lambda is your technical co-founder. We'll bring your idea from conception to product launch.
+          %p &nbsp;
+/ END PAGE | Welcome
 
-    .col-md-6
-      %ul.medium-list-two-line
-        %li
-          %i.icon-chevron-right
-          Exceptional talent only — $100/hr minimum rate.
-        %li
-          %i.icon-chevron-right
-          No recruiters or spam. We're developers too and we only match consultants with projects that fit their expertise and interest.
-        %li
-          %i.icon-chevron-right
-          Don't get overwhelmed with low-quality talent in a race to the bottom.
-
-        %li
-          %a.consultant-form.btn.btn-primary.btn-centered.centered-text{href: "#consultant_form"}
-            Join Lambda &rarr;
-
+/ PAGE
+#page-features.pages.paralax.white-bg
+  .overlay
+  .container
+    / Header
+    %header
+      -# %h3 Why is it so difficult to find good developers?
+      .row
+        .span8.offset2
+          %p 
+          %p
+            There are many ways to build a bridge, but not all bridges stand the test of time.
+          %p
+            Building things the right way is a skill that only comes with years of experience -- years of seeing others make
+            %strong subtle
+            and
+            %strong costly
+            mistakes that only become apparent once it's
+            = succeed "." do
+              %strong too late
+            = succeed "." do
+              %strong easily avoided
+      %hr/
+      .row
+        .span8.offset2
+          %p
+            There are many mediocre developers out there, but exceptional developers are comparatively rare.
+      %h4 We're not just developers
+      .row
+        .span8.offset2
+          %p
+            Unlike traditional devshops, we don't just implement a spec. We help you figure out
+            %strong what you should be building
+            \-- based on
+            = succeed "." do
+              %strong what your business needs
+      %br/
+      %hr/
+      %h4 Developers you can rely on
+      .row
+        .span8.offset2
+          %p
+            Our developers are world-class. We don't outsource anything. Here's a sampling:
+      %br/
+      / Article
+      %article
+        / List of people and description with their contact details which are visable on hover
+        %ul.thumbnails.about-items
+          %li.span4.center
+            / Team member name and function
+            %h5
+              Andrew Frankel
+              %br/
+              %small Pointless Title
+            / Team member short info
+            %p.smallFontBy08 A jack-of-all-trades technologist, Andrew has worked as a developer, sys-admin, designer, and team leader. He's available to help your team with both hands-on execution and high-level strategy.
+          %li.span4.center
+            %h5
+              Kenneth Chen
+              %br/
+              %small Pointless Title
+            %p.smallFontBy08 A Goldman Sachs alum turned tech entrepreneur, Ken is a full-stack web developer and project manager. He has worked on large, multi-year projects and regularly wins prizes at day-long hackathons.
+          %li.span4.center
+            %h5
+              Zalman
+              %br/
+              %small Pointless Title
+            %p.smallFontBy08 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.
+      / End Article
+      %hr/
+      .row
+        .span8.offset2
+          %p
+            Measure twice, cut once. That's our philosophy. Let us build your product for you.
+    / End Header
+/ END PAGE
