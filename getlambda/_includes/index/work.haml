@@ -1,0 +1,57 @@
+/ PAGE | WORK
+#page-work.pages.page-work.white-bg
+  .container
+    / Header
+    %header
+      -# %h4.line-divider
+      %h1 Work
+      / Short desciption about Work in general
+      .row
+        .span8.offset2
+          %p
+            Check out some of the work we've done for our clients.
+      / Sub menu
+      /
+        Params:
+        plugin-filter: Defines links for filtering.
+      / comment out submenus for now until we have more items here
+      /
+    / End Header
+    %section.portfolio-item-details
+      .row-fluid
+        .span8
+          %a.smallFontBy08{href: "http://www.thecostofcarbon.org/", target: "_blank"}
+            %img{alt: "Fundation", src: "assets/images/pages/work/coc-screenshot.png"}/
+        .span4
+          %h5 Cost of Carbon
+          %article.smallFontBy08
+            %p
+              Our client, the Climate Reality Project, a non-profit organization founded by Al Gore, needed a site built within two months, to illustrate the impact of carbon pollution on everyday people. We had to meet a hard deadline, as Al Gore promoted the website on a live televised event reach millions of users, during the "24 Hours of Reality". We led the development efforts from conception to product launch, and this is the reuslt.
+              %br/
+          %section.website
+            %h5 Visit site
+            %a.smallFontBy08{href: "http://www.thecostofcarbon.org/", target: "_blank"} www.thecostofcarbon.org
+    / Article
+    %article
+      /
+        Portfolio items
+        Params:
+        plugin-filter-elements: Defines items for filtering, each item has class which defines filter value.
+        portfolio-items: Customise portfolio items for hover effect.
+      -# %ul.thumbnails.plugin-filter-elements.portfolio-items
+      -#   %li.span4.mix
+      -#   %li.span4.mix
+      -#     %a#project1{"data-destination" => "portfolio-items", "data-insert" => "before", href: "#pages/portfolio/project_1.html"}
+      -#       / Portfolio image
+      -#       %img{alt: "Cost of Carbon", src: "assets/images/pages/work/coc-screenshot.png"}/
+      -#       / Portfolio name, activated on hover
+      -#       .portfolio-overlay
+      -#         %h4 Cost of Carbon
+      -#   %li.span4.mix
+
+    / End Article
+    / Footer
+    / remove until we have more items
+    /
+    / End footer
+/ END PAGE | WORK

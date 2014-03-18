@@ -1,0 +1,88 @@
+/ PAGE | CONTACT
+#page-contact.pages.black-bg.white.page-contact
+  .container
+    / Header
+    %header
+      %h4.line-divider Contact
+      %h1 Contact us for a free consultation
+      .row
+        .span8.offset2
+          %p
+            We'll make your project succeed, and we move fast.
+    / End Header
+    / Start Article
+    %article
+      .row-fluid
+        / Contact form
+        .span6
+          %h5 Tell Us About Your Project
+          #crmWebToEntityForm
+            %meta{content: "text/html;charset = UTF-8", "http-equiv" => "content-type"}/
+            .form-header-group
+            %form{"accept-charset" => "UTF-8", action: "https://crm.zoho.com/crm/WebToLeadForm", method: "POST", name: "WebToLeads95594400000008904", onsubmit: "javascript:document.charset=\"UTF-8\"; return checkMandatery()"}
+              %input{name: "xnQsjsdp", style: "display:none;", type: "text", value: "vs0sAR@C1L5thYo@kRl79w$$"}/
+              %input#zc_gad{name: "zc_gad", type: "hidden", value: ""}/
+              %input{name: "xmIwtLD", style: "display:none;", type: "text", value: "TYZ3M4hl@jML2DxZUHXOVvGCpUdN@P5O"}/
+              %input{name: "actionType", style: "display:none;", type: "text", value: "TGVhZHM="}/
+              %input{name: "returnURL", style: "display:none;", type: "text", value: "http://getlambda.com/thanks-companies/"}/
+              .form-line
+                %label.form-label-left Name:
+                %input.span12.form-textbox{class: "validate[required]", maxlength: "\n40", name: "Name", type: "text"}/
+              .form-line
+                %label.form-label-left Email:
+                %input.span12.form-textbox{class: "validate[required]", maxlength: "100", name: "Email", type: "text"}/
+              .form-line
+                %label.form-label-left Description:
+                %input.span12.form-textbox{maxlength: "32000", name: "Description", type: "text"}/
+              .form-buttons-wrapper{style: "text-align: center;"}
+                %input.form-submit-button{name: "save", type: "submit", value: "Submit"}/
+          %form
+            %input.span12{placeholder: "Name", required: "required", type: "text"}/
+            %input.span12{placeholder: "Email", required: "required", type: "email"}/
+            %input.span12{placeholder: "Budget", type: "text"}/
+            %input.span12{placeholder: "Timeframe", type: "text"}/
+            %textarea.span12{required: "required", rows: "10"}
+            %button.btn.btn-primary{type: "submit"} Submit
+        / End Contact form
+        / Contact information
+        .span5.offset1
+          %h5 Meet Us
+          .media
+            .social-icons.sicon-white.pull-left
+              %a.sicon-phone{href: "#"}
+                %i Phone
+            .media-body.smallFontBy08
+              917-582-1552
+          .media
+            .social-icons.sicon-white.pull-left
+              %a.sicon-place{href: "#"}
+                %i Location
+            .media-body.smallFontBy08
+              222 Broadway, New York, NY 10038
+          .media
+            .social-icons.sicon-white.pull-left
+              %a.sicon-mail{href: "#"}
+                %i email
+            .media-body.smallFontBy08
+              ken@getlambda.com
+          %br/
+          %br/
+          %br/
+          %h5 Get social
+          .social-icons.sicon-white.bordered
+            %a.sicon-facebook{href: "#"}
+              %i Facebook
+            %a.sicon-twitter{href: "#"}
+              %i Twitter
+            %a.sicon-linkedin{href: "#"}
+              %i LinkedIn
+            %a.sicon-youtube{href: "#"}
+              %i Youtube
+            %a.sicon-pinterest{href: "#"}
+              %i Pinterest
+        / End Contact information
+    / End Article
+  / Background map image
+  #map-image
+    %img{alt: "Treble", src: "assets/images/pages/contact/map_bck.jpg"}/
+/ END PAGE | CONTACT
