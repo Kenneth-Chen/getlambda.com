@@ -3,12 +3,16 @@
 
 / PAGE
 .page-talent.pages.white.paralax
+  .overlay
   .container
     / Header
     %header
-      %h3 Who will I be working with?
       .row
-        .span8.offset2
+        .span12
+          &nbsp;
+      %h3.offset6 Who will I be working with?
+      .row
+        .span6.offset6
           %p
             We segment our talent pool into
             = succeed "," do
@@ -17,17 +21,24 @@
             = succeed "," do
               %strong associates
             \ who will build your product from start to finish.
-          %p
-            = succeed "," do
-              %strong Partners
-            are experienced entrepreneurs who have often made successful exits from their own companies. They know all about the common pitfalls and challenges of building a startup from the ground up. They'll work with you during the early stages of a project to help you figure out what to build and in what order, given your timeframe and budget.
-          %p
-            = succeed "," do
-              %strong Associates
-            tend to be freelancers with 3-5+ years of development or design experience. They're highly motivated, are experts in agile methodoglies, and are up-to-date on software development best practices. They're very, very good at what they do.
+      .row
+        .span12
+          &nbsp;
 / END PAGE
 
 / PAGE
+.page-talent.pages.white-bg
+  .container
+    %header
+      %p
+        = succeed "," do
+          %strong Partners
+        are experienced entrepreneurs who have often made successful exits from their own companies. They know all about the common pitfalls and challenges of building a startup from the ground up. They'll work with you during the early stages of a project to help you figure out what to build and in what order, given your timeframe and budget.
+      %p
+        = succeed "," do
+          %strong Associates
+        tend to be freelancers with 3-5+ years of development or design experience. They're highly motivated, are experts in agile methodoglies, and are up-to-date on software development best practices. They're very, very good at what they do.
+
 .page-talent.pages.white-bg
   .container
     %header
