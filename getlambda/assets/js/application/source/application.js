@@ -25,8 +25,8 @@ $(document).ready(function(){
     
     /* Centralize elements on page. */
     $('.centralized').centralized({
-        delay: 1500,
-        fadeSpeed: 500
+        delay: 0,
+        fadeSpeed: 0
     });
     
     /* Make embeded videos responsive. */
