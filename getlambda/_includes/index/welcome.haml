@@ -1,0 +1,30 @@
+%video.big-video{autoplay: "autoplay", loop: "true", "data-setup" => "{}", poster: "null", preload: "auto", src: "assets/videos/factory.mp4", "webkit-playsinline" => ""}
+  %source{src: "assets/videos/factory.mp4", type: "video/mp4"}
+
+/ PAGE | WELCOME
+#page-welcome.pages.white.paralax.page-welcome
+  .overlay
+  / Centralized content
+  .centralized
+    .container
+      .row-fluid
+        .span12.center
+          #welcome-messages.line-divider
+            %ul.slides
+              %li
+                %h1 Lambda
+          %p builds startups
+          %p Lambda is your technical co-founder. We'll bring your idea from conception to product launch.
+          %p &nbsp;
+/ END PAGE | Welcome
+
+/ PAGE
+.pages.paralax.white-bg
+  .container
+    / Header
+    %header
+      .row
+        .span8.offset2
+          %input{placeholder: "Your e-mail"}
+          %input{type: "submit", value: "Get our insights delivered"}
+/ END PAGE
