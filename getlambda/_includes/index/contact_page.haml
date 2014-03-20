@@ -32,7 +32,7 @@
                 %input.span12.form-textbox{class: "validate[required]", maxlength: "100", name: "Email", type: "text"}/
               .form-line
                 %label.form-label-left Description:
-                %input.span12.form-textbox{maxlength: "32000", name: "Description", type: "text"}/
+                %textarea.span12.form-textbox{maxlength: "32000", name: "Description"}
               .form-buttons-wrapper{style: "text-align: center;"}
                 %input.form-submit-button{name: "save", type: "submit", value: "Submit"}/
           -# %form
@@ -82,6 +82,5 @@
         / End Contact information
     / End Article
   / Background map image
-  #map-image
-    %img{alt: "Treble", src: "assets/images/pages/contact/map_bck.jpg"}/
+  #map-image{style: "background: url(/assets/images/pages/contact/manhattan_map.png) 50% 0 no-repeat fixed"}
 / END PAGE | CONTACT
