@@ -26,13 +26,25 @@
               %input{name: "returnURL", style: "display:none;", type: "text", value: "http://getlambda.com/thanks-companies/"}/
               .form-line
                 %label.form-label-left Name:
-                %input.span12.form-textbox{class: "validate[required]", maxlength: "\n40", name: "Name", type: "text"}/
+                %input.span12.form-textbox{class: "validate[required]", maxlength: "40", name: "Last Name", type: "text"}/
               .form-line
                 %label.form-label-left Email:
                 %input.span12.form-textbox{class: "validate[required]", maxlength: "100", name: "Email", type: "text"}/
               .form-line
-                %label.form-label-left Description:
-                %textarea.span12.form-textbox{maxlength: "32000", name: "Description"}
+                %label.form-label-left Budget:
+                %select{name: 'LEADCF6', style: "width: 475px; color: #000;"}
+                  %option{value: '$15k - $50k'} $15k - $50k
+                  %option{value: '$50k - $150k'} $50k - $150k
+                  %option{value: '$150k +'} $150k +
+              .form-line
+                %label.form-label-left Timeline:
+                %select{name: 'LEADCF9', style: "width: 475px; color: #000;"}
+                  %option{value: '< 1 month'} < 1 month
+                  %option{value: '3 - 6 months'} 3 - 6 months
+                  %option{value: '6 + months'} 6 + months
+              .form-line
+                %label.form-label-left Project Description:
+                %textarea.span12.form-textbox{maxlength: "32000", rows: "3", name: "Description"}
               .form-buttons-wrapper{style: "text-align: center;"}
                 %input.form-submit-button{name: "save", type: "submit", value: "Submit"}/
           -# %form
