@@ -1,23 +1,20 @@
-%video.big-video{autoplay: "autoplay", loop: "true", "data-setup" => "{}", poster: "null", preload: "auto", "webkit-playsinline" => ""}
-  %source{src: "assets/videos/factory.mp4", type: "video/mp4"}
-  %source{src: "assets/videos/factory.ogg", type: "video/ogg"}
-
 / PAGE | WELCOME
 #page-welcome.pages.white.paralax.page-welcome
-  .underlay
   .overlay
-  .centralized
-    .container
-      .row-fluid
-        .span12.center
+  .underlay
+  .container
+    .row-fluid
+      %video.big-video{autoplay: "autoplay", loop: "true", "data-setup" => "{}", poster: "null", preload: "auto", "webkit-playsinline" => ""}
+        %source{src: "assets/videos/factory.mp4", type: "video/mp4"}
+        %source{src: "assets/videos/factory.ogg", type: "video/ogg"}
+      .text
+        .div
           #welcome-messages.line-divider
             %ul.slides
               %li
                 %h1 Lambda
-          %p builds startups
+          %p We build startups
           %p Lambda is your technical co-founder. We'll bring your idea from conception to product launch.
-          %p &nbsp;
-          %p &nbsp;
 / END PAGE | Welcome
 
 .pages.paralax.white.cta
