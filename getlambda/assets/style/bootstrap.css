@@ -109,8 +109,12 @@
 .page-welcome .centralized {
   z-index: 2;
 }
-/**   PAGE | WORK*/.portfolio-items {
-  /*    * Filtering configuration    */
+/*
+*   PAGE | WORK
+*/.portfolio-items {
+  /*
+    * Filtering configuration
+    */
 }
 .portfolio-items a {
   position: relative;
@@ -234,7 +238,9 @@
 .portfolio-item-details .submenu span:hover {
   text-decoration: none;
 }
-/**   PAGE | TALENT*/.page-talent-partners {
+/*
+*   PAGE | TALENT
+*/.page-talent-partners {
   background: url(/assets/images/startup_people.jpg) 50% 0 no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -644,7 +650,9 @@
 .page-contact form .media {
   padding-top: 24px;
 }
-/**   PAGE | CLIENTS*/.page-clients .row-fluid {
+/*
+*   PAGE | CLIENTS
+*/.page-clients .row-fluid {
   padding-bottom: 40px;
   padding-top: 15px;
 }
@@ -756,7 +764,9 @@
 #navigation .mobile-menu:hover .icon-bar {
   background-color: #4e808e;
 }
-/**   FOOTER*/footer .copyright-container {
+/*
+*   FOOTER
+*/footer .copyright-container {
   max-width: 100%;
   background-color: #26292B;
   padding: 0px;
@@ -2035,7 +2045,6 @@ abbr.initialism {
 blockquote {
   padding: 0 0 0 40px;
   margin: 0 0 27px;
-  color: #aaaaaa;
   position: relative;
 }
 blockquote p {
@@ -2047,7 +2056,6 @@ blockquote p {
 blockquote small {
   display: block;
   line-height: 27px;
-  color: #bbbbbb;
 }
 blockquote small:before {
   content: '\2014 \00A0';
