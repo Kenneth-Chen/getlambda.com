@@ -26,35 +26,28 @@
               %input{name: "returnURL", style: "display:none;", type: "text", value: "http://getlambda.com/thanks-companies/"}/
               .form-line
                 %label.form-label-left Name:
-                %input.span12.form-textbox{class: "validate[required]", maxlength: "40", name: "Last Name", type: "text"}/
+                %input.span12.form-textbox{class: "validate[required]", maxlength: "40", required: "required", name: "Last Name", type: "text"}/
               .form-line
                 %label.form-label-left Email:
-                %input.span12.form-textbox{class: "validate[required]", maxlength: "100", name: "Email", type: "text"}/
+                %input.span12.form-textbox{class: "validate[required]", maxlength: "100", required: "required", name: "Email", type: "text"}/
               .form-line
                 %label.form-label-left Budget:
-                %select{name: 'LEADCF6', style: "width: 475px; color: #000;"}
+                %select{name: 'LEADCF6', style: "width: 100%;"}
                   %option{value: '$15k - $50k'} $15k - $50k
                   %option{value: '$50k - $150k'} $50k - $150k
                   %option{value: '$150k +'} $150k +
               .form-line
                 %label.form-label-left Timeline:
-                %select{name: 'LEADCF9', style: "width: 475px; color: #000;"}
+                %select{name: 'LEADCF9', style: "width: 100%;"}
                   %option{value: '< 1 month'} < 1 month
                   %option{value: '3 - 6 months'} 3 - 6 months
                   %option{value: '6 + months'} 6 + months
               .form-line
                 %label.form-label-left Project Description:
-                %textarea.span12.form-textbox{maxlength: "32000", rows: "3", name: "Description"}
+                %textarea.span12.form-textbox{style: "font-size: 16px;", maxlength: "32000", rows: "3", name: "Description"}
               .form-buttons-wrapper{style: "text-align: center;"}
-                %input.form-submit-button{name: "save", type: "submit", value: "Submit"}/
-          -# %form
-          -#   %input.span12{placeholder: "Name", required: "required", type: "text"}/
-          -#   %input.span12{placeholder: "Email", required: "required", type: "email"}/
-          -#   %input.span12{placeholder: "Budget", type: "text"}/
-          -#   %input.span12{placeholder: "Timeframe", type: "text"}/
-          -#   %textarea.span12{required: "required", rows: "10"}
-          -#   %button.btn.btn-primary{type: "submit"} Submit
-        / End Contact form
+                %button.btn.btn-primary.form-submit-button{type: "submit"} Submit
+          / End Contact form
         / Contact information
         .span5.offset1
           %h5 Meet Us
