@@ -19,7 +19,23 @@
               Lambda is hiring developers, designers, product managers, and anyone else with experience building new startups.
         .row
           .span12
-            &nbsp;
+            %p &nbsp;
+        .row
+          .span12
+            .mc_embed_signup
+              %form#mc-embedded-subscribe-form.validate{action: "http://getlambda.us8.list-manage1.com/subscribe/post?u=f9c8de9004ada3baf957a7a9a&amp;id=0341146ef3", method: "post", name: "mc-embedded-subscribe-form", target: "_blank", novalidate: ""}
+                %input#mce-FNAME.name{type: "text", name: "FNAME", placeholder: "Your name"}/
+                %input#mce-EMAIL.required.email{type: "email", name: "EMAIL", placeholder: "Your email"}/
+                %button.btn.btn-primary.form-submit-button{type: "submit"} Get notified of Lambda openings
+                .mce-responses.clear
+                  #mce-error-response.response
+                  #mce-success-response.response
+                / to prevent bots from signing up
+                .div{style: "position: absolute; left: -5000px;"}
+                  %input{type: "text", name: "b_f9c8de9004ada3baf957a7a9a_0341146ef3", value: ""}
+        .row
+          .span12
+            %p &nbsp;
 / END PAGE
 
 / PAGE
