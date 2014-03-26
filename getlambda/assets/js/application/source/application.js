@@ -63,7 +63,7 @@ $(document).ready(function(){
     */
     if(pageWidth > 980){
         /* Dont user paralax for tablet and mobile devices. */
-        $('#page-welcome').parallax("0%", 0.2);
+        // $('#page-welcome').parallax("0%", 0.2);
         $('.page-talent').parallax("0%", 0.07);
         $('.page-about').parallax("0%", 0.1);
         $('.page-contact').parallax("0%", 0.1);
