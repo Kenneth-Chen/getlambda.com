@@ -161,6 +161,9 @@
         .logo {
             .transition(none);
         }
+        .text {
+            bottom: 40px;
+        }
     }
     .page-about .about-items .item {
         display: block;
@@ -263,6 +266,29 @@
 
 @media (max-width: 480px) {
 
+    // page welcome
+    .page-welcome {
+        video.big-video {
+            display: none;
+        }
+        #welcome-messages.line-divider:after {
+            background: none;
+            content: none;
+        }
+        .text {
+            position: relative;
+            padding-top: 20px;
+            bottom: 0px;
+        }
+    }
+    
+    // cta
+    .cta {
+        input[type="email"] {
+            width: 250px;
+            margin-bottom: 5px;
+        }
+    }
 
     // Block level the page header small tag for readability
     .page-header h1 small {

@@ -15,14 +15,9 @@
     input {
         padding: 5px;
     }
-}
-
-.big-video {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: -1;
+    input[type="email"] {
+        width: 300px;
+    }
 }
 
 .page-welcome {
@@ -30,12 +25,25 @@
     position: relative;
     text-align: center;
     
+    .big-video {
+        position: relative;
+        top: @baseLineHeight;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+    }
+
     .text {
-        margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 40px;
+        position: absolute;
+        top: auto;
+        bottom: 50px;
+        left: 50%;
         width: 70%;
         z-index: 1000;
+    }
+    .text > div {
+        position: relative;
+        left: -50%;
     }
 
     .logo {
