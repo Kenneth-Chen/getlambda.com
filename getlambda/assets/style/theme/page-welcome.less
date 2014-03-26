@@ -2,13 +2,6 @@
 *   PAGE | WELCOME
 */
 
-.page-home {
-    position: relative;
-    background: url(/assets/images/nyc.jpg) 50% 0 no-repeat fixed;
-    background-attachment: scroll;
-    .background-size(cover);
-}
-
 .cta {
     background-color: @grayDarkish;
     color: #ffffff;
@@ -21,16 +14,18 @@
 }
 
 .page-welcome {
+    background: url(/assets/images/car-factory.png) 50% 0 no-repeat fixed;
+    .background-size(cover);
     width: 100%;
     position: relative;
     text-align: center;
     
     .big-video {
         position: relative;
-        top: @baseLineHeight;
+        top: 5px;
         left: 0px;
         width: 100%;
-        z-index: -1;
+        z-index: 0;
     }
 
     .text {
