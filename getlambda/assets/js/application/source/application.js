@@ -6,6 +6,11 @@ $(document).ready(function(){
     var pageWidth = $(window).width();
     var navigationHeight = $("#navigation").outerHeight();
 
+    var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+    if(isMobile) {
+        $("video.big-video").hide();
+    }
+
     /**
     *   ON RESIZE, check again
     */
