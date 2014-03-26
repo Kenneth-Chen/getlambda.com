@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 
-@media (max-width: 767px) {
+@media (max-width: 766px) {
     html, body {
         font-size: @baseFontSize * 0.8;
         line-height: @baseLineHeight * 0.8;
@@ -161,8 +161,14 @@
         .logo {
             .transition(none);
         }
+        video.big-video {
+            display: none;
+        }
         .text {
-            bottom: 40px;
+            position: relative;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            bottom: 0px;
         }
     }
     .page-about .about-items .item {
@@ -268,15 +274,11 @@
 
     // page welcome
     .page-welcome {
-        video.big-video {
-            display: none;
-        }
         #welcome-messages.line-divider:after {
             background: none;
             content: none;
         }
         .text {
-            position: relative;
             padding-top: 20px;
             bottom: 0px;
         }
