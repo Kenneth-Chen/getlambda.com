@@ -2,11 +2,11 @@
 #page-welcome.pages.white.paralax.page-welcome
   .overlay
   .underlay
+  %video.big-video{autoplay: "autoplay", loop: "true", "data-setup" => "{}", poster: "null", preload: "auto", "webkit-playsinline" => ""}
+    %source{src: "assets/videos/car-factory.mp4", type: "video/mp4"}
+    %source{src: "assets/videos/car-factory.ogg", type: "video/ogg"}
   .container
     .row-fluid
-      %video.big-video{autoplay: "autoplay", loop: "true", "data-setup" => "{}", poster: "null", preload: "auto", "webkit-playsinline" => ""}
-        %source{src: "assets/videos/car-factory.mp4", type: "video/mp4"}
-        %source{src: "assets/videos/car-factory.ogg", type: "video/ogg"}
       .text
         .div
           #welcome-messages.line-divider
@@ -25,7 +25,7 @@
       / Note: this form is also in the footer section
       .mc_embed_signup
         %form#mc-embedded-subscribe-form.validate{action: "http://getlambda.us8.list-manage.com/subscribe/post?u=f9c8de9004ada3baf957a7a9a&amp;id=a99df99802", method: "post", name: "mc-embedded-subscribe-form", onsubmit: "javascript:document.charset=\"UTF-8\"; return checkMandatery()"}
-          %input#mce-EMAIL.required.email{type: "email", name: "EMAIL", placeholder: "Your email", required: "required", style: "width: 300px;"}/
+          %input#mce-EMAIL.required.email{type: "email", name: "EMAIL", placeholder: "Your email", required: "required"}/
           %button.btn.btn-primary.form-submit-button{type: "submit"} Join our mailing list
           .mce-responses.clear
             #mce-error-response.response
