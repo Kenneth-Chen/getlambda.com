@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Lambda - technology talent agency</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <meta name="description" content="Lambda is a talent agency for exceptional developers, designers, and technology professionals. We represent the technology industry's most exceptional talent and connect them with companies seeking their expertise.">
-  <meta name="author" content="prettystrap">
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <meta name="description" content="Lambda is a talent agency for exceptional developers, designers, and technology professionals. We represent the technology industry's most exceptional talent and connect them with companies seeking their expertise.">
+    <title>Lambda - startup engineering</title>
 
-  <link href='/assets/global-b455b2488669710323fb78cb6142ed8a.css' rel='stylesheet' type='text/css' />
+<!-- 
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+-->
 
+    <link rel="shortcut icon" href="assets/images/ico/favicon.png">
+                                   
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="assets/style/bootstrap.css" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-  <script src='/assets/global-14767e0d8a623ee50fa8ad0f7b9f15f6.js' type='text/javascript'></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src='/assets/ie8-d86290ba5de36cd7b425d0ba0b8bad37.js' type='text/javascript'></script>
 
+    <![endif]-->
+    
+    <!-- GOOGLE WEB FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800' rel='stylesheet' type='text/css'>
 
-  <link href='/assets/form-4e68a3c48515ee1d712bb5a08f14cbba.css' rel='stylesheet' type='text/css' />
-
-  <script src='/assets/global-c708b251ccaf6e5b8e07e58e7cec2335.js' type='text/javascript'></script>
-
-
-  <!--Import Google Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon.png">
-
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-    <script src='/assets/ie8-e9bc85a9a2bed149921021538eedf625.js' type='text/javascript'></script>
-
-  <![endif]-->
-
-  <!-- Google analytics -->
+    <!-- Google analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -54,464 +56,252 @@
 
 
 <body id="top">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="navbar-container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <i class="icon-reorder"></i>
-      </button>
-      <a class="navbar-brand" href="http://getlambda.com">Lambda</a>
+  <!-- NAVIGATION -->
+<nav class="fixed-top" id="navigation">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span12 center">
+                <!-- LOGO -->
+                <a class="brand pull-left" href="./">
+                    Lambda
+                </a>
+                <!-- END LOGO -->
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+                <!-- END MOBILE MENU BUTTON -->
+                
+                <!-- MAIN MENU -->
+                <ul id="main-menu" class="nav-collapse collapse">
+                    <li><a href="" onclick="window.location='index.html#page-welcome'">Home</a></li>
+                    <li><a href="" onclick="window.location='talent.html'">Talent</a></li>
+                    <li><a href="" onclick="window.location='about.html'">About</a></li>
+                    <li><a href="" onclick="window.location='contact.html'">Contact</a></li>
+                </ul>
+                <!-- END MAIN MENU -->
+                
+                <!-- SOCIAL ICONS -->
+                <div class="social-icons hover-big pull-right">
+                    <a href="https://www.facebook.com/getlambda" class="sicon-facebook"><i>Facebook</i></a>
+                    <a href="https://twitter.com/getlambda" class="sicon-twitter"><i>Twitter</i></a>
+                    <a href="https://www.linkedin.com/company/5050254" class="sicon-linkedin"><i>LinkedIn</i></a>
+                </div>
+                <!-- END SOCIAL ICONS -->
+            </div>
+        </div>
     </div>
-    <div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a title="Why hire a Lambda consultant?" href="#companies" class=" scroll brand-4">For Companies</a></li>
-        <li><a title="Why become a Lambda consultant?" href="#consultants" class="scroll brand-3">For Consultants</a></li>
-        <li><a title="Who we are" href="#who" class="scroll fadeto brand-3">Who we are</a></li>
-        <li><a title="Get in touch!" href="#contact" class="scroll brand-4">Contact</a></li>
-        <li><a title="Blog" href="//getlambda.com/blog/" class="brand-3">Blog</a></li>
-        <li><a style="background-color: #4baad3;" href="#company_form" class="company-form brand-1">Hire Lambda &rarr;</a></li>
-        <li><a style="background-color: #4baad3;" href="#consultant_form" class="consultant-form brand-1">Join Lambda &rarr;</a></li>
-      </ul>
-    </div>
-  </div><!-- /.navbar-container -->
 </nav>
+<!-- END NAVIGATION -->
 
 
-  <div class='page color-1' id='home'>
-  <div class='inner-page'>
-    <h2 class='page-headline'>
-      Lambda is a talent agency for exceptional developers, designers, and technology professionals
-    </h2>
+  <!-- PAGE | WELCOME -->
+<div class='pages white paralax page-welcome' id='page-welcome'>
+  <div class='overlay'></div>
+  <div class='underlay'></div>
+  <video autoplay='autoplay' class='big-video' data-setup='{}' loop='true' poster='null' preload='auto' webkit-playsinline=''>
+    <source src='assets/videos/car-factory.mp4' type='video/mp4'></source>
+    <source src='assets/videos/car-factory.ogg' type='video/ogg'></source>
+  </video>
+  <div class='container'>
+    <div class='row-fluid'>
+      <div class='text'>
+        <div class='div'>
+          <div class='line-divider' id='welcome-messages'>
+            <ul class='slides'>
+              <li>
+                <h1>Lambda</h1>
+              </li>
+            </ul>
+          </div>
+          <p>We build startups</p>
+          <p>Lambda is your technical co-founder. We'll bring your idea from conception to product launch.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class='row inner-page'>
-    <div class='col-md-12'>
-      <p class='lead'>We represent the technology industry's most exceptional talent and connect them with companies seeking their expertise.</p>
-    </div>
-    <div class='col-md-6 lazy-container'>
-      <img alt="Working together with a laptop. That's how we roll." class='lazy' data-original='/img/home.svg' height='400' src='/img/pixel.png' width='600'>
-    </div>
-    <div class='col-md-6'>
-      <ul class='medium-list-two-line'>
-        <li>
-          <i class='icon-chevron-right'></i>
-          Exceptional talent only — $100/hr minimum rate.
+</div>
+<!-- END PAGE | Welcome -->
+<!-- PAGE | CTA -->
+<div class='pages paralax white cta'>
+  <div class='container'>
+    <!-- Header -->
+    <header>
+      <!-- Note: this form is also in the footer section -->
+      <div class='mc_embed_signup'>
+        <form action='http://getlambda.us8.list-manage.com/subscribe/post?u=f9c8de9004ada3baf957a7a9a&amp;amp;id=a99df99802' class='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' onsubmit='javascript:document.charset="UTF-8"; return checkMandatery()'>
+          <input class='required email' id='mce-EMAIL' name='EMAIL' placeholder='Your email' required='required' type='email'>
+          <button class='btn btn-primary form-submit-button' type='submit'>Join our mailing list</button>
+          <div class='mce-responses clear'>
+            <div class='response' id='mce-error-response'></div>
+            <div class='response' id='mce-success-response'></div>
+          </div>
+          <!-- to prevent bots from signing up -->
+          <div class='div' style='position: absolute; left: -5000px;'>
+            <input name='b_f9c8de9004ada3baf957a7a9a_a99df99802' type='text' value=''>
+          </div>
+        </form>
+      </div>
+    </header>
+  </div>
+</div>
+<!-- END PAGE -->
+<!-- PAGE | WORK -->
+<div class='pages page-work white-bg' id='page-work'>
+  <div class='container'>
+    <!-- Header -->
+    <header>
+      <h4 class='line-divider'>Portfolio</h4>
+      <h1>Work</h1>
+      <div class='row'>
+        <div class='span8 offset2'>
+          <p>
+            Check out some of the work we've done for our clients.
+          </p>
+        </div>
+      </div>
+      <!-- Sub menu -->
+      <!--
+        Params:
+        plugin-filter: Defines links for filtering.
+      -->
+      <!-- comment out submenus for now until we have more items here -->
+      <!--  -->
+    </header>
+    <!-- End Header -->
+    <!-- Article -->
+    <article>
+      <!--
+        Portfolio items
+        Params:
+        plugin-filter-elements: Defines items for filtering, each item has class which defines filter value.
+        portfolio-items: Customise portfolio items for hover effect.
+      -->
+      <ul class='thumbnails plugin-filter-elements portfolio-items'>
+        <li class='span6 mix mix_all' style='display: inline-block; opacity: 1;'>
+          <a data-destination='portfolio-items' data-insert='before' href='#pages/portfolio/project_1.html'>
+            <!-- Portfolio image -->
+            <img src='assets/images/pages/work/tmb_coc-screenshot.png'>
+            <!-- Portfolio name, activated on hover -->
+            <div class='portfolio-overlay'>
+              <h4>Cost of Carbon</h4>
+            </div>
+          </a>
         </li>
-        <li>
-          <i class='icon-chevron-right'></i>
-          No recruiters or spam. We're developers too and we only match consultants with projects that fit their expertise and interest.
+        <li class='span6 mix mix_all' style='display: inline-block; opacity: 1;'>
+          <a data-destination='portfolio-items' data-insert='before' href='#pages/portfolio/project_3.html'>
+            <img src='assets/images/pages/work/tmb_treatings-screenshot.png'>
+            <div class='portfolio-overlay'>
+              <h4>Treatings</h4>
+            </div>
+          </a>
         </li>
-        <li>
-          <i class='icon-chevron-right'></i>
-          Don't get overwhelmed with low-quality talent in a race to the bottom.
+        <li class='span6 mix mix_all' style='display: inline-block; opacity: 1;'>
+          <a data-destination='portfolio-items' data-insert='before' href='#pages/portfolio/project_2.html'>
+            <img src='assets/images/pages/work/tmb_full-genomes-screenshot.png'>
+            <div class='portfolio-overlay'>
+              <h4>Full Genomes</h4>
+            </div>
+          </a>
         </li>
-        <li>
-          <a class='consultant-form btn btn-primary btn-centered centered-text' href='#consultant_form'>
-            Join Lambda &rarr;
+        <li class='span6 mix mix_all' style='display: inline-block; opacity: 1;'>
+          <a data-destination='portfolio-items' data-insert='before' href='#pages/portfolio/project_4.html'>
+            <img src='assets/images/pages/work/tmb_rewardable-screenshot.png'>
+            <div class='portfolio-overlay'>
+              <h4>Rewardable</h4>
+            </div>
           </a>
         </li>
       </ul>
+    </article>
+    <!-- End Article -->
+    <!-- Article -->
+    <article>
+      <!--
+        Portfolio items
+        Params:
+        plugin-filter-elements: Defines items for filtering, each item has class which defines filter value.
+        portfolio-items: Customise portfolio items for hover effect.
+      -->
+    </article>
+    <!-- End Article -->
+  </div>
+</div>
+<!-- END PAGE | WORK -->
+<!-- PAGE | TESTIMONIAL -->
+<div class='pages white-bg'>
+  <div class='container'>
+    <div class='line-divider'></div>
+    <div class='testimonial span8 offset2'>
+      <blockquote>
+        If you're building a startup, you should meet with Lambda. Andrew has been a great mentor, advising me on the technical side of things and guiding me with my strategy. He knows his stuff, and also he can introduce you to top-notch people in other fields to help you move forward.
+      </blockquote>
+      <div class='author offset4'>
+        &mdash; Mike Giordani, Inkins
+      </div>
+      <p>&nbsp;</p>
     </div>
   </div>
 </div>
-<div class='page color-3' id='companies'>
-  <div class='inner-page'>
-    <h2 class='page-headline'>
-      Why should I hire a consultant through Lambda?
-    </h2>
-    <div class='row inner-page'>
-      <div class='col-md-6 lazy-container'>
-        <img alt='Chasing down talent is hard' class='figurette lazy' data-original='/img/running.svg' height='320' src='/img/pixel.png' width='480'>
-      </div>
-      <div class='col-md-6'>
-        <p>
-          Competition for the best developers is fierce. New computer science graduates can start their careers with 100k salaries and experienced developers can easily earn over 150k. Exceptional designers can command even higher salaries.
-        </p>
-        <p>
-          But there's a dark pool of hidden talent that isn't looking for full-time work. Drawn by the excitement of the startup world, many of the best  technologists are running their own startups or freelance consultancies. These entrepreneurs won't ever respond to a job board post or a recruiter's spam message.
-        </p>
-        <p>
-          Launching a successful startup is often a question of longevity, so many talented founders are willing to accept open-ended contract positions in order to extend their runway. Many startups take years to find their initial traction, so these contract relationships can be every bit as long-term as regular employment.
-        </p>
-        <p>
-          <a class='company-form btn btn-primary btn-centered centered-text' href='#company_form'>
-            Hire Lambda &rarr;
-          </a>
-        </p>
-      </div>
-      <hr>
-      <ul class='features list-inline'>
-        <li>
-          <h3>
-            <i class='icon-bullseye'>&nbsp;Free guidance</i>
-          </h3>
-          <p>
-            Confused about when to hire a designer or a front-end developer? We can guide you to the right talent for your needs.
-          </p>
-        </li>
-        <li>
-          <h3>
-            <i class='icon-briefcase'>&nbsp;Rapid onboarding</i>
-          </h3>
-          <p>
-            Find and hire excellent people in a fraction of the time. We've already conducted interviews and reviewed code.
-          </p>
-        </li>
-        <li>
-          <h3>
-            <i class='icon-puzzle-piece'>&nbsp;Any size project</i>
-          </h3>
-          <p>
-            We can provide individual consultants for small projects or connect you with a complete team that has worked together in the past.
-          </p>
-        </li>
-        <li>
-          <h3>
-            <i class='icon-legal'>&nbsp;Safe</i>
-          </h3>
-          <p>
-            Payments are held in escrow and only released once the work is completed.
-          </p>
-        </li>
-        <li>
-          <h3>
-            <i class='icon-group'>&nbsp;Flexible</i>
-          </h3>
-          <p>
-            Book as few as 10 hours or as many as 40 hours per week.
-          </p>
-        </li>
-        <li>
-          <h3>
-            <i class='icon-magic'>&nbsp;Easy</i>
-          </h3>
-          <p>
-            We take care of the paperwork and the legalese.
-          </p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class='page color-2' id='consultants'>
-  <div class='inner-page'>
-    <h2 class='page-headline'>
-      Why should I become a Lambda consultant?
-    </h2>
-    <ul class='medium-list-two-line'>
-      <li>
-        <i class='icon-money'></i>
-        Make more money &ndash; We negotiate on your behalf to get you the highest rate possible. In almost every case, our consultants have earned a higher rate than they previously asked for on their own.
-      </li>
-      <li>
-        <i class='icon-group'></i>
-        We find clients &ndash; 'Nuff said.
-      </li>
-      <li>
-        <i class='icon-time'></i>
-        Flexible &ndash; Work as few as 10 hours a week or as many as 40.
-      </li>
-      <li>
-        <i class='icon-shield'></i>
-        Serious clients only &ndash; Wanna hear about a disruptive social network for cats that "just needs a coder"? Neither do we.
-      </li>
-      <li>
-        <i class='icon-legal'></i>
-        Safe &ndash; Payments are held in escrow and released as the work is completed
-      </li>
-      <li>
-        <i class='icon-magic'></i>
-        Easy &ndash; We take care of the paperwork and the legalese.
-      </li>
-      <li>
-        <a class='consultant-form btn btn-primary btn-centered centered-text' href='#consultant_form'>
-          Join Lambda &rarr;
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-<div class='page color-3' id='who'>
-  <div class='inner-page'>
-    <h2 class='page-headline'>
-      Who we are
-    </h2>
-    <div class='row inner-page team'>
-      <div class='col-md-6'>
-        <p class='lead'>We understand how difficult it is to hire developers.</p>
-        <p>
-          With our previous experience both working at and running early startups, we've been on both sides of the
-          hiring table. It's tough to hire someone for a salaried position when your business is changing rapidly.
-          Defining the requirements for a new position is difficult enough, without the added difficulty of
-          finding someone who fits your needs. Working with freelancers or outsourcing agencies is frustrating
-          when you don't have any guarantee you'll be able to work with the same developers in the future.
-        </p>
-        <p>
-          We started Lambda to provide a flexible alternative to traditional software development resources.
-          We're able to augment your existing team when you need additional capacity or can help you start new
-          projects before you're ready to commit to hiring.
-        </p>
-      </div>
-      <div class='col-md-6 lazy-container'>
-        <img alt='Some faceless folk standing in a group' class='lazy' data-original='/img/who_we_are.svg' height='320' src='/img/pixel.png' width='480'>
-      </div>
-    </div>
-    <hr>
-    <div class='row inner-page team'>
-      <div class='col-md-6'>
-        <img alt="Andrew's charming visage" class='lazy pull-left' data-original='/img/andrew.png' height='339' src='/img/pixel.png' width='226'>
-        <h4>Andrew Frankel</h4>
-        <p>
-          A jack-of-all-trades technologist, Andrew has worked as a developer, sys-admin, designer, and team
-          leader. He's available to help your team with both hands-on execution and high-level strategy.
-        </p>
-        <ul>
-          <li>
-            <a href='http://leknarf.net'>
-              <i class='icon-home'></i>
-              leknarf.net
-            </a>
-          </li>
-          <li>
-            <a href='mailto:andrew@getlambda.com'>
-              <i class='icon-envelope-alt'></i>
-              andrew@getlambda.com
-            </a>
-          </li>
-          <li class='social'>
-            <a href='https://www.facebook.com/frankel'>
-              <i class='icon-facebook-sign'></i>
-            </a>
-            <a href='http://www.linkedin.com/profile/view?id=16906960'>
-              <i class='icon-linkedin-sign'></i>
-            </a>
-            <a href='https://twitter.com/leknarf13'>
-              <i class='icon-twitter-sign'></i>
-            </a>
-            <a href='https://github.com/leknarf'>
-              <i class='icon-github-sign'></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class='col-md-6'>
-        <img alt="Ken's photo" class='lazy pull-left' data-original='/img/ken-ll-white.png' height='339' src='/img/pixel.png' width='226'>
-        <h4>Ken Chen</h4>
-        <p>
-          A Goldman Sachs alum turned tech entrepreneur, Ken is a full-stack web developer and project manager. He
-          has worked on large, multi-year projects and regularly wins prizes at day-long hackathons.
-        </p>
-        <ul>
-          <li>
-            <a href='mailto:ken@getlambda.com'>
-              <i class='icon-envelope-alt'></i>
-              ken@getlambda.com
-            </a>
-          </li>
-          <li class='social'>
-            <a href='https://www.facebook.com/profile.php?id=116331'>
-              <i class='icon-facebook-sign'></i>
-            </a>
-            <a href='http://www.linkedin.com/pub/kenneth-chen/9/661/57a'>
-              <i class='icon-linkedin-sign'></i>
-            </a>
-            <a href='https://github.com/Kenneth-Chen'>
-              <i class='icon-github-sign'></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div class='page color-4' id='contact'>
-  <div class='inner-page centered-text'>
-    <h2 class='page-headline centered-text'>
-      Get in touch
-    </h2>
-    <div class='row'>
-      <div class='col-md-12'>
-        <h3>How can we help?</h3>
-        <p>
-          Contact us to discuss how we can help.
-        </p>
-        <ul class='list-inline'>
-          <div>
-            <li>
-              <a href='mailto:andrew@getlambda.com'>
-                <i class='icon-envelope-alt'></i>
-                andrew@getlambda.com
-              </a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href='http://www.linkedin.com/profile/view?id=16906960'>
-                <i class='icon-linkedin-sign'></i>
-                LinkedIn
-              </a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href='https://github.com/leknarf'>
-                <i class='icon-github-sign'></i>
-                Github
-              </a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <i class='icon-building'></i>
-              Lambda
-              <br>
-              <i class='icon-sign-blank hidden'></i>
-              222
-              Broadway, 20th Floor
-              <br>
-              <i class='icon-sign-blank hidden'></i>
-              New York, NY 10038
-            </li>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- inline colorbox company project form -->
-<div style='display:none'>
-  <div id='company_form' style='padding:10px; background:#fff;'>
-    <div id='crmWebToEntityForm'>
-      <meta content='text/html;charset = UTF-8' http-equiv='content-type'>
-      <div class='form-header-group'>
-        <h1 class='form-header' style='color: black;'>Hire a Lambda consultant</h1>
-        <h2 class='form-subHeader' style='color: black;'>Tell us a little about what you're looking for and we'll be in touch</h2>
-      </div>
-      <form accept-charset='UTF-8' action='https://crm.zoho.com/crm/WebToLeadForm' method='POST' name='WebToLeads95594400000008904' onsubmit='javascript:document.charset="UTF-8"; return checkMandatery()'>
-        <input name='xnQsjsdp' style='display:none;' type='text' value='vs0sAR@C1L5thYo@kRl79w$$'>
-        <input id='zc_gad' name='zc_gad' type='hidden' value=''>
-        <input name='xmIwtLD' style='display:none;' type='text' value='TYZ3M4hl@jML2DxZUHXOVvGCpUdN@P5O'>
-        <input name='actionType' style='display:none;' type='text' value='TGVhZHM='>
-        <input name='returnURL' style='display:none;' type='text' value='http://getlambda.com/thanks-companies/'>
-        <div class='form-line'>
-          <label class='form-label-left'>First Name:</label>
-          <input class='form-textbox validate[required]' maxlength='&#x000A;40' name='First Name' type='text'>
-        </div>
-        <div class='form-line'>
-          <label class='form-label-left'>Last Name:</label>
-          <input class='form-textbox validate[required]' maxlength='80' name='Last Name' type='text'>
-        </div>
-        <div class='form-line'>
-          <label class='form-label-left'>Email:</label>
-          <input class='form-textbox validate[required]' maxlength='100' name='Email' type='text'>
-        </div>
-        <div class='form-line'>
-          <label class='form-label-left'>Description:</label>
-          <input class='form-textbox' maxlength='32000' name='Description' type='text'>
-        </div>
-        <div class='form-buttons-wrapper' style='text-align: center;'>
-          <input class='form-submit-button' name='save' type='submit' value='Submit'>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-<!-- inline colorbox developer form -->
-<div style='display:none'>
-  <div id='consultant_form' style='padding:10px; background:#fff;'>
-    <div id='crmWebToEntityForm'>
-      <meta content='text/html;charset = UTF-8' http-equiv='content-type'>
-      <div class='form-header-group'>
-        <h1 class='form-header' style='color: black;'>Become a Lambda consultant</h1>
-        <h3 class='form-subHeader' style='color: black;'>Let us know a little about yourself and we'll be in touch</h3>
-      </div>
-      <form accept-charset='UTF-8' action='https://crm.zoho.com/crm/WebToContactForm' method='POST' name='WebToContacts955944000000064847' onsubmit='javascript:document.charset="UTF-8"'>
-        <input name='xnQsjsdp' style='display:none;' type='text' value='vs0sAR@C1L5thYo@kRl79w$$'>
-        <input id='zc_gad' name='zc_gad' type='hidden' value=''>
-        <input name='xmIwtLD' style='display:none;' type='text' value='TYZ3M4hl@jNnPXqthnWRjPGCpUdN@P5O'>
-        <input name='actionType' style='display:none;' type='text' value='Q29udGFjdHM='>
-        <input name='returnURL' style='display:none;' type='text' value='http://getlambda.com/thanks/'>
-        <div class='form-line'>
-          <label class='form-label-left'>First Name:</label>
-          <input class='form-textbox validate[required]' maxlength='&#x000A;40' name='First Name' type='text'>
-        </div>
-        <div class='form-line'>
-          <label class='form-label-left'>Last Name:</label>
-          <input class='form-textbox validate[required]' maxlength='80' name='Last Name' type='text'>
-        </div>
-        <div class='form-line'>
-          <label class='form-label-left'>Email:</label>
-          <input class='form-textbox validate[required]' maxlength='100' name='Email' type='text'>
-        </div>
-        <div class='form-line'>
-          <p>
-            <label class='form-label-left'>Location:</label>
-            <input class='form-textbox validate[required]' maxlength='100' name='Mailing City' type='text'>
-          </p>
-        </div>
-        <div class='form-line'>
-          <p>
-            Please give us one or both of the items below
-          </p>
-        </div>
-        <div class='form-line'>
-          <label class='form-label-left'>Github:</label>
-          <input class='form-textbox validate[required]' maxlength='255' name='CONTACTCF1' type='text'>
-        </div>
-        <div class='form-line'>
-          <label class='form-label-left'>LinkedIn:</label>
-          <input class='form-textbox validate[required]' maxlength='255' name='CONTACTCF2' type='text'>
-        </div>
-        <!-- hidden fields -->
-        <input name='CONTACTCF3' type='hidden' value='Employee'>
-        <input id='referrer' name='CONTACTCF16' type='hidden'>
-        <input name='Lead Source' type='hidden' value='Web'>
-        <div class='form-buttons-wrapper' style='text-align: center;'>
-          <input class='form-submit-button' name='save' type='submit' value='Submit'>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-  <!-- The footer, social media icons, and copyright -->
-<footer class="page color-5">
-    <div class="inner-page row-fluid centered">
-        <!--<div>-->
-        <!--<a href="mailto:andrew@leknarf.net">andrew@leknarf.net</a>-->
-        <!--<hr><br/>-->
-        <!--</div>-->
-
-        <div class="span12 social">
-            <a href="https://www.facebook.com/getlambda"><i class="icon-facebook-sign"></i></a>
-            <a href="http://www.linkedin.com/profile/view?id=16906960"><i class="icon-linkedin-sign"></i></a>
-            <a href="https://twitter.com/getlambda"><i class="icon-twitter-sign"></i></a>
-            <a href="https://github.com/leknarf"><i class="icon-github-sign"></i></a>
-        </div>
-    </div>
-    <div class="inner-page row-fluid copyright-container">
-        <div class="span12 text-right copyright">
-            <a href="#top" title="Go to top" class="scroll">To top <i class="icon-caret-up"></i></a>
-        </div>
-    </div>
-</footer>
-
-
-<script type="text/javascript">
-      var disqus_shortname = 'getlambda';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
+<!-- END PAGE -->
+<!-- JQUERY -->
+<script src='assets/js/jquery-1.10.2.min.js' type='text/javascript'></script>
+<!-- TWITTER BOOTSTRAP -->
+<script src='assets/js/bootstrap/bootstrap.min.js' type='text/javascript'></script>
+<!--[if lt IE 9]>  <![endif]-->
+<script src='assets/js/bootstrap/html5shiv.js' type='text/javascript'></script>
+<!-- PLUGINS -->
+<script src='assets/js/plugins/jquery.bxslider.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.centralized.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.fixedonlater.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.hashloader.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.mixitup.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.nav.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.parallax-1.1.3.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.responsivevideos.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.scrollTo.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.tweet.min.js' type='text/javascript'></script>
+<script src='assets/js/plugins/jquery.tweetCarousel.min.js' type='text/javascript'></script>
+<!-- INITIALIZE -->
+<script src='assets/js/application/application.min.js' type='text/javascript'></script>
+<script src='assets/js/application/index.min.js' type='text/javascript'></script>
+<!-- GOOGLE ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-44061294-1', 'gridelicious.net');
+  ga('send', 'pageview');
 </script>
-
-
+<footer class='page color-5'>
+  <div class='inner-page row-fluid centered cta'>
+    <div class='mc_embed_signup'>
+      <form action='http://getlambda.us8.list-manage.com/subscribe/post?u=f9c8de9004ada3baf957a7a9a&amp;amp;id=a99df99802' class='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' onsubmit='javascript:document.charset="UTF-8"; return checkMandatery()'>
+        <input class='required email' id='mce-EMAIL' name='EMAIL' placeholder='Your email' required='required' type='email'>
+        <button class='btn btn-primary form-submit-button' type='submit'>Join our mailing list</button>
+        <div class='mce-responses clear'>
+          <div class='response' id='mce-error-response'></div>
+          <div class='response' id='mce-success-response'></div>
+        </div>
+        <!-- to prevent bots from signing up -->
+        <div class='div' style='position: absolute; left: -5000px;'>
+          <input name='b_f9c8de9004ada3baf957a7a9a_a99df99802' type='text' value=''>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='inner-page row-fluid copyright-container'>
+    <div class='span12 center copyright'>
+      &copy; Lambda ·
+      <a href='mailto:andrew@getlambda.com'>email</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
