@@ -1,36 +1,36 @@
 / PAGE | TALENT-HEADER
 #page-talent-header.page-talent.pages.white.paralax
   .underlay
-  .bg-image-overlay
-    .container
-      / Header
-      %header
-        .row
-          .span12
-            &nbsp;
-        %h1.line-divider Work with us
-        .row
-          .span8.offset2
-            %p
-              Lambda is hiring developers, designers, product managers, and anyone else with experience building new startups.
-        .row
-          .span12
-            %p &nbsp;
-        .row
-          .span12
-            .mc_embed_signup
-              %form#mc-embedded-subscribe-form.validate{action: "http://getlambda.us8.list-manage1.com/subscribe/post?u=f9c8de9004ada3baf957a7a9a&amp;id=0341146ef3", method: "post", name: "mc-embedded-subscribe-form", onsubmit: "javascript:document.charset=\"UTF-8\"; return checkMandatery()"}
-                %input#mce-EMAIL.required.email{type: "email", name: "EMAIL", placeholder: "Your email", required: "required", style: "width: 300px;"}/
-                %button.btn.btn-primary.form-submit-button{type: "submit"} Get notified of Lambda openings
-                .mce-responses.clear
-                  #mce-error-response.response
-                  #mce-success-response.response
-                / to prevent bots from signing up
-                .div{style: "position: absolute; left: -5000px;"}
-                  %input{type: "text", name: "b_f9c8de9004ada3baf957a7a9a_0341146ef3", value: ""}
-        .row
-          .span12
-            %p &nbsp;
+  .bg-image
+  .container
+    / Header
+    %header
+      .row
+        .span12
+          &nbsp;
+      %h1.line-divider Work with us
+      .row
+        .span8.offset2
+          %p
+            Lambda is hiring developers, designers, product managers, and anyone else with experience building new startups.
+      .row
+        .span12
+          %p &nbsp;
+      .row
+        .span12
+          .mc_embed_signup
+            %form#mc-embedded-subscribe-form.validate{action: "http://getlambda.us8.list-manage1.com/subscribe/post?u=f9c8de9004ada3baf957a7a9a&amp;id=0341146ef3", method: "post", name: "mc-embedded-subscribe-form", onsubmit: "javascript:document.charset=\"UTF-8\"; return checkMandatery()"}
+              %input#mce-EMAIL.required.email{type: "email", name: "EMAIL", placeholder: "Your email", required: "required", style: "width: 300px;"}/
+              %button.btn.btn-primary.form-submit-button{type: "submit"} Get notified of Lambda openings
+              .mce-responses.clear
+                #mce-error-response.response
+                #mce-success-response.response
+              / to prevent bots from signing up
+              .div{style: "position: absolute; left: -5000px;"}
+                %input{type: "text", name: "b_f9c8de9004ada3baf957a7a9a_0341146ef3", value: ""}
+      .row
+        .span12
+          %p &nbsp;
 / END PAGE
 
 / PAGE
@@ -44,43 +44,44 @@
 
 / PAGE | TALENT-PARTNERS
 #page-talent-partners.page-talent.white.pages.paralax
-  .bg-image-overlay
-    .container
-      %header
-        %h4.line-divider Partners
-        %h1 Co-founders for hire
-        .row
-          .span8.offset2
-            %p
-              Every startup we build is different, so they need guidance from experienced entrepreneurs. Why become a Lambda partner?
-        %br/
-      / End Header
-      / Article
-      %article
-        %ul.thumbnails.about-items
-          %li.span4.center
-            %img{src: "assets/images/articon-bullseye.png"}
-            %h5
-              Your team is ready
-            %p.smallFontBy08
-              Joining Lambda means you’ll never need to turn down clients again or risk over-promising. If a project is too big for one person, you can always bring in a Lambda teammate to help.
-          %li.span4.center
-            %img{src: "assets/images/articon-thumbsup.png"}
-            %h5
-              Freelance lifestyle
-            %p.smallFontBy08 
-              Partners pick the projects we work on. If you want the flexibility of running your own freelance business, you’ll find it here. We’ll take care of the boring stuff, like preparing contracts and running payroll.
-          %li.span4.center
-            %img{src: "assets/images/articon-head.png"}
-            %h5
-              Learn by doing
-            %p.smallFontBy08                
-              Most of our partners have significant technology experience, but are new to marketing, finding leads, and closing sales. We’ll teach you everything we know about the business side and hope to learn from you as well.
+  .underlay
+  .bg-image
+  .container
+    %header
+      %h4.line-divider Partners
+      %h1 Co-founders for hire
+      .row
         .span8.offset2
-          .quote.center
-            Lambda has been tremendously valuable in sourcing high caliber developers of equal skill and integrity.  They are efficient, flexible, and reliable having procured specialists for projects on short notice while also tirelessly working to find the right individuals to fill our longer-term roles. They are truly best-in-class, and I highly recommend their services.
-            %h5 &mdash; Peter Komassa, Founder, Rewardable
-      / End Articlee
+          %p
+            Every startup we build is different, so they need guidance from experienced entrepreneurs. Why become a Lambda partner?
+      %br/
+    / End Header
+    / Article
+    %article
+      %ul.thumbnails.about-items
+        %li.span4.center
+          %img{src: "assets/images/articon-bullseye.png"}
+          %h5
+            Your team is ready
+          %p.smallFontBy08
+            Joining Lambda means you’ll never need to turn down clients again or risk over-promising. If a project is too big for one person, you can always bring in a Lambda teammate to help.
+        %li.span4.center
+          %img{src: "assets/images/articon-thumbsup.png"}
+          %h5
+            Freelance lifestyle
+          %p.smallFontBy08 
+            Partners pick the projects we work on. If you want the flexibility of running your own freelance business, you’ll find it here. We’ll take care of the boring stuff, like preparing contracts and running payroll.
+        %li.span4.center
+          %img{src: "assets/images/articon-head.png"}
+          %h5
+            Learn by doing
+          %p.smallFontBy08                
+            Most of our partners have significant technology experience, but are new to marketing, finding leads, and closing sales. We’ll teach you everything we know about the business side and hope to learn from you as well.
+      .span8.offset2
+        .quote.center
+          Lambda has been tremendously valuable in sourcing high caliber developers of equal skill and integrity.  They are efficient, flexible, and reliable having procured specialists for projects on short notice while also tirelessly working to find the right individuals to fill our longer-term roles. They are truly best-in-class, and I highly recommend their services.
+          %h5 &mdash; Peter Komassa, Founder, Rewardable
+    / End Article
 / END PAGE
 
 / PAGE | TALENT-ASSOCIATES
